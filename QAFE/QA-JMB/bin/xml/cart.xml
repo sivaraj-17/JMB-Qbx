@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Cart Automation Suite" preserve-order="true">
+    <test name="JMB Verify Cart Test Cases">
+        <classes>
+            <class name="testcases.cart.CartFunctions">
+                <methods>
+                    <include name="verifyCart"/>
+                    <include name="editCart"/>
+                    <include name="editCartModify"/>
+                    <include name="modalPaymentTypePricing"/>
+                    <include name="productPagePaymentTypePricing"/>
+                    <include name="cartPagePaymentTypePricing"/>
+                    <include name="itemMultiplequantity"/>
+                    <include name="giftCertificate"/>
+                    <include name="removeGiftCertificate"/>
+                    <include name="verifyUpdatedCartLanguagePaperCheck"/>
+                    <include name="verifyUpdatedCartLanguageACH"/>
+                    <include name="verifyUpdatedCartLanguageBankWire"/>
+                    <include name="sortingCategoryPagesWithPriceListCheck"/>
+                    <exclude name="bankwireOrderAndModifyInNewTabBelowWireLimit"/>
+                    <exclude name="verifyProductPremiumNotDisplayedOnPLP"/>
+                </methods>
+            </class>
+            <class name="testcases.cart.CheckoutRules">
+                <methods>
+                    <include name="maxCartQuantity"/>
+                    <include name="bwMinRequired"/>
+                    <include name="allButCreditCard"/>
+                    <include name="allMetodsAvailable"/>
+                    <include name="bankwireOnly"/>
+                    <include name="noCreditOrPaypalOrEC"/>
+                    <include name="bitCoinAndBankwireOnly"/>
+                    <include name="callCustomerService"/>
+                </methods>
+            </class>
+
+            <class name="testcases.cart.QcCheckoutRules">
+                <methods>
+                    <include name="limitedCartQuantity"/>
+                    <include name="qcBwMinRequired"/>
+                    <include name="allMetodsAvailable"/>
+                    <include name="qcBankwireAndBitcoin"/>
+                    <include name="noCreditOrEcheck"/>
+                    <include name="payPalBwBitcoin"/>
+                    <include name="bitCoinAndBankwireOnly"/>
+                    <include name="callCustomerService"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

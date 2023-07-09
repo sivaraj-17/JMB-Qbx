@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Account Automation Suite" preserve-order="true">
+	<test name="PM My Account Test Cases">
+		<classes>
+			<class name="testcases.account.Q_PM_MyAccount">
+				<methods>
+					<include name="registerNewUser"/>
+					<include name="regUserCheckout"/>
+					<include name="dashboardPage"/>
+					<include name="paidOrder"/>
+					<include name="pendingOrder"/>
+					<include name="orderPaging"/>
+					<include name="editAccAddress"/>
+					<include name="newAccAddress"/>
+					<include name="deleteAccAddress"/>
+					<include name="accListCards"/>
+					<include name="accSwitchDefault"/>
+					<include name="addNewCard"/>
+					<include name="delAccCreditCards"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- PM Account Test Cases -->
+  	
+</suite>

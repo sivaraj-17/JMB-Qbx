@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Verify Cart Tickets Suite" preserve-order="true">
+	<test name="Silver Verify Cart Tickets Test Cases">
+		<classes>
+			<!-- JMB-6231 -->
+			<class name="testcases.cart.Q_Slv_CartFunctions">
+                <methods>
+                    <include name="verifyUpdatedCartLanguagePaperCheck"/>
+                    <include name="verifyUpdatedCartLanguageACH"/>
+                    <include name="verifyUpdatedCartLanguageBankWire"/>
+                    <exclude name="verifyUpdatedCartLanguageBankWire"/>
+                    <include name="slv_cartLimit_Verification001"/>
+                    <include name="slv_cartLimit_Verification002"/>
+                    <include name="slv_cartLimit_Verification003"/>
+                    <include name="slv_cartLimit_Verification004"/>
+                    <include name="slv_cartLimit_Verification005"/>
+                    <include name="slv_cartLimit_Verification006"/>
+                </methods>
+            </class>
+		</classes>
+	</test>
+
+</suite>

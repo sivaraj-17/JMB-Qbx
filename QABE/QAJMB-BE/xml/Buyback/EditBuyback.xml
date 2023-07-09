@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page" >
+
+    <test name="BuyBack Suite">
+        <classes>
+            <class name="testcases.buyback.Q_EditBuyBack">
+                <methods>
+                    <include name="sendPackingSlipFrombbListing"/>
+                    <include name="orderEmailPackingSlip"/>
+                    <include name="deleteProduct"/>
+                    <include name="entireOrderArrived"/>
+                    <include name="receiveProdIndiv"/>
+                    <include name="editCustomerInfo"/>
+                    <include name="editPaymentType"/>
+                    <include name="editFirstBbProductQuantity"/>
+                    <include name="addProduct"/>
+                    <include name="editInternalStatus"/>
+                    <include name="internalStatusShippingLabelRequested"/>
+                    <include name="lineItemLevelNote"/>
+                    <include name="editCartNumberSkipCreditCard"/>
+                    <include name="initiateClaim"/>
+                    <include name="removeBbClaim"/>
+                    <include name="viewBuybackChangeLog"/>
+                    <include name="editCompanyName"/>
+                    <include name="companyCheckboxSelection"/>
+                    <include name="cantCancelPaidBuyback"/>
+                    <include name="verifyUserCanDeclinePayment"/>
+                    <include name="switchAddress"/>
+                    <include name="editBbAddress"/>
+                    <exclude name="editBbDuplicateProduct"/>
+                    <include name="editSSNnEIN"/>
+                    <include name="deleteCompanyName"/>
+                    <include name="verifyTaxInfoEncrypted"/>
+                    <include name="verifyBBNotesAndLogs"/>
+                    <exclude name="duplicateBuybackPaymentAccount"/>
+                    <include name="bbGoBackButton"/>
+                    <include name="verifyAlertOnBBOver$750k"/>
+                    <include name="buybackClaimModification"/>
+                </methods>
+            </class>
+    	</classes>
+    </test>
+</suite>

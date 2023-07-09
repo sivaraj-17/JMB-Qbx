@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Back End Automation Suite" preserve-order="true">
+	<test name="JMB Order Form Cancellation">
+		<classes>
+			<class name="testcases.order.Q_OrderCancellation">
+				<methods>
+					<include name="skipCancellationFee" />
+					<include name="orderCancellationEmail" />
+					<include name="cancelAndSave" />
+					<include name="verifPymentSelectionFeePrevWaived" />
+					<include name="verifPymentSelectionFeeNeverWaived" />
+					<include name="mlfNotes"/>
+					<include name="addNoteFeatureForCancellingInvoices"/>
+					<include name="cancelInvoiceReports"/>
+					<include name="editCancelInvoiceReports"/>
+					<include name="verifyUnableToCancelShippedOrderWithoutPermission86"/>
+					
+					<include name="verifyOrderStatus"/>
+					<include name="verifyOrderItemList"/>
+					<include name="verifyChangeOrderStatus"/>
+					<include name="verifyChangeQuantity"/>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+</suite>

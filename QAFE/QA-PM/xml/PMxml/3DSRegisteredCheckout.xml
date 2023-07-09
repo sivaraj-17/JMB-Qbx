@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM 3DS Registered Automation Suite" preserve-order="true">
+	<test name="PM 3DS Registered Checkout Test Cases">
+		<classes>
+			<class name="testcases.registered.Q_PM_Negative3Ds">
+				<methods>
+					<include name="turn3DSOn"/>
+					<include name="negFrictionlessCheckoutSuccess001"/>
+					<include name="negFrictionlessCheckoutNoAuth001"/>
+					<include name="negFrictionlessCheckoutUnAvailableAuth001"/>
+					<include name="negFrictionlessWithRejection001"/>
+					<include name="negEnrolmentCheckoutError001"/>
+					<include name="negSetUpSuccess001"/>
+					<include name="negSetupAuthUnsuccessful001"/>
+					<include name="negSetupAuthUnavailable001"/>
+					<include name="negGuestSetupAuthUnavailable001"/>
+					<include name="turn3DSOff"/>
+				</methods>
+			</class>
+			<class name="testcases.registered.Q_PM_RegisteredCheckout">
+				<methods>
+					<include name="turn3DSOn"/>
+					<include name="FrictionlessCheckoutSuccess001"/>
+					<include name="FrictionlessCheckoutSuccess002"/>
+					<include name="FrictionlessCheckoutSuccess003"/>
+					<include name="FrictionlessNoAuth001"/>
+					<include name="FrictionlessNoAuth002"/>
+					<include name="FrictionlessNoAuth003"/>
+					<include name="FrictionlessUnavailableAuth001"/>
+					<include name="FrictionlessUnavailableAuth002"/>
+					<include name="FrictionlessUnavailableAuth003"/>
+					<include name="FrictionlessWithRejectio001"/>
+					<include name="FrictionlessWithRejection002"/>
+					<include name="FrictionlessWithRejection003"/>
+					<include name="enrolmentCheckError001"/>
+					<include name="enrolmentCheckError002"/>
+					<include name="enrolmentCheckError003"/>
+					<include name="setUpSuccess001"/>
+					<include name="setUpSuccess002"/>
+					<include name="setUpSuccess003"/>
+					<include name="setupAuthUnsuccessful001"/>
+					<include name="setupAuthUnsuccessful002"/>
+					<include name="setupAuthUnsuccessful003"/>
+					<include name="setupAuthUnavailable001"/>
+					<include name="setupAuthUnavailable002"/>
+					<include name="setupAuthUnavailable003"/>
+					<include name="turn3DSOff"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- PM Guest Checkout Test Cases -->
+  	
+</suite>

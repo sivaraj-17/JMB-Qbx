@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Shipping Upgrade Tickets Suite" preserve-order="true">
+	<test name="Silver Shipping Upgrade Tickets Test Cases">
+		<classes>
+			<!-- JMB-5357 -->
+			<class name ="testcases.salesTax.Q_Slv_CaliforniaTax">
+				<methods>
+					<include name="californiaTaxSpecificProductLessThan1500"/>
+					<include name="californiaNoTaxSpecificProductOverThan1500"/>
+				</methods>
+			</class>
+			<!-- JMB-6375 -->
+			<class name ="testcases.salesTax.Q_Slv_FloridaTax">
+				<methods>
+					<include name="floridaTaxPalladium1ozUnder500"/>
+					<include name="floridaTaxArtworkUnder500"/>
+					<include name="floridaTaxAccessoriesUnder500"/>
+					<include name="floridaTaxCopperQuarterUnder500"/>
+					<include name="floridaTaxMultipleItemsUnder500"/>
+					<include name="floridaTaxMultipleItemsPlusNoTaxItemUnder500"/>
+					<include name="floridaTaxItemsOver500"/>
+					<include name="guestFloridaTaxUnder500"/>
+					<include name="guestFloridaTaxAllItemsTaxable"/>
+					<include name="guestFloridaTaxMixedItemUnder500"/>
+					<include name="guestFloridaTaxMixedItemsOver500"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Tickets Account Automation Suite" preserve-order="true">
+	<test name="JMB Tickets Account Test Cases">
+		<classes>
+			<!-- JMB-6054, JMB-6056 -->
+			<class name="testcases.account.Q_JMB_MyAccount">
+				<methods>
+					<include name="alertTabFormatting"/>
+					<include name="verifyBuyAgain"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Account Test Cases -->
+  	
+</suite>

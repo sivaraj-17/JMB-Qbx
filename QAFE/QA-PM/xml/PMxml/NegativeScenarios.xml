@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Account Automation Suite" preserve-order="true">
+	<test name="PM My Account Test Cases">
+		<classes>
+			<class name="testcases.negative.Q_PM_Negative">
+				<methods>
+					<include name="regPuertoRico"/>
+					<include name="payPalPuertoRico"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- PM Account Test Cases -->
+  	
+</suite>

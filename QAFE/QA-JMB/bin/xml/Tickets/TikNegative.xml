@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Tickets Negative Suite" preserve-order="true">
+	<test name="JMB Tickets Negative Test Cases">
+		<classes>
+			<!-- JMB-6039, JMB-6420, JMB-6650, JMB-6752 -->
+			<class name="testcases.negative.Q_JMB_NegativeCheckout">
+				<methods>
+					<include name="expiredCardErrorMsg"/>
+					<include name="expiringCardAlert"/>
+					<include name="verifyCwtANotDisplayingNewAddrAfterEditingAddress"/>
+					<include name="verifyLocalPickup_NewAddrNonPartZipAfterEditingAddress"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

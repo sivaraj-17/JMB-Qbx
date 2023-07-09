@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Sell to Us Automation Suite" preserve-order="true">
+	<test name="JMB Buyback Test Cases">
+		<classes>
+			<class name="testcases.registered.RegisteredCheckout">
+				<methods>
+					<include name="regSwitchAddress"/>
+					<include name="shippingTaxes"/>
+					<include name="shipUpgradePriority"/>
+					<include name="shippingUpgrade3DayAir"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

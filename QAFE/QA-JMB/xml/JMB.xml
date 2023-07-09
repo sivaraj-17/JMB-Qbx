@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Automation Suite">
+
+    <suite-files>
+        <suite-file path="JMB/Account.xml" />
+        <suite-file path="JMB/cartFunctions.xml" />
+        <suite-file path="JMB/checkoutRules.xml" />
+        <suite-file path="JMB/qcCheckoutRules.xml" />
+        <suite-file path="JMB/GuestCheckout.xml" />
+        <suite-file path="JMB/RegisteredCheckout.xml" />
+        <suite-file path="JMB/ShippingUpgrade.xml" />
+        <suite-file path="JMB/Negative.xml" />
+        <suite-file path="JMB/SellToUs.xml" />
+        <suite-file path="JMB/PayPal.xml" />
+        <suite-file path="JMB/AutoBuyPositive.xml" />
+        <suite-file path="JMB/AutoBuyNegative.xml" />
+        <suite-file path="JMB/3DSAutoBuy.xml" />
+        <suite-file path="JMB/3DSGuestCheckout.xml" />
+        <suite-file path="JMB/3DSNegative.xml" />
+        <suite-file path="JMB/3DSRegistered.xml" />
+        <suite-file path="JMB/DeviceFingerprint.xml" />
+    </suite-files>
+
+</suite>

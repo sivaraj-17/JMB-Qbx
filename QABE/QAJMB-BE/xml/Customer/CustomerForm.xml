@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Back End Automation Suite" preserve-order="true">
+	<test name="JMB Customer View Automation">
+		<classes>
+			<class name="testcases.customerView.Q_CustomerPage">
+				<methods>
+					<include name="viewCustomerOrderByParam" />
+					<include name="setAndRemoveQcStatus" />
+					<include name="setAndRemoveMilitaryMember" />
+					<include name="setAndRemoveShipmentDelay" />
+					<include name="setAndRemoveShipMethod" />
+					<include name="setAndRemoveForceSignatureFlag" />
+					<include name="setAndRemoveDIYBuybackCapability" />
+					<include name="editCustomerBillingInfo" />
+					<include name="copyBiilingInfoToShipInfo" />
+					<include name="editCustomerShippingInfo" />
+					<include name="sendPassResret" />
+					<exclude name="setAndRestFraudFlag" />
+					<include name="verifyForceShippingToUSPSRegMail" />
+					<include name="verifyForceShippingToUSPSMail" />
+					<include name="verifyForceShippingToUPSMail" />
+					<exclude name="verifyMLFInvoiceOver100RemovesQCstatus" />
+					<include name="CustomerNotesTimestamp" />
+					<include name="verifyCustomerLogSwitchUser" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+</suite>

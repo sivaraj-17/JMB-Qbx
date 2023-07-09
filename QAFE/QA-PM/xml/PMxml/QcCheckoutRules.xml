@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM QC Checkout Rules Automation Suite" preserve-order="true">
+	<test name="PM QC Checkout Rules">
+		<classes>
+			<class name="testcases.cart.Q_PM_QcRules">
+				<methods>
+					<include name="allPaymentTypes"/>
+					<include name="bwUnavailable"/>
+					<include name="ccPaymentNotAvailable"/>
+					<include name="echeckPcBwBcAvailable"/>
+					<exclude name="ppBwBcAvailable"/>
+					<include name="bwBcOnly"/>
+					<include name="callCSR"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

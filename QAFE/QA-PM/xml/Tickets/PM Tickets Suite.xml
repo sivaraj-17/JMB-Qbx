@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Tickets Suite" preserve-order="true">
+	<suite-files>
+		<suite-file path="TikAccount.xml" />
+		<suite-file path="TikCart.xml" />
+		<suite-file path="TikNegative.xml" />
+		<suite-file path="TikRegistered.xml" />
+	</suite-files>
+
+</suite>

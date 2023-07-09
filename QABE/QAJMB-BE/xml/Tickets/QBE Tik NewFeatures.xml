@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BE New Features Tickets Suite" preserve-order="true">
+	<test name="BE New Features Tickets Test Cases">
+		<classes>
+			<!-- JMB-2860 -->
+			<class name="testcases.newFeatures.Q_AutoLimit2860">
+				<methods>
+					<include name="setLimit"/>
+					<include name="damagedProductIncrease"/>
+					<include name="damagedProductDecrease"/>
+					<include name="inHandAdjustDecrease"/>
+					<include name="inHandAdjustIncrease"/>
+					<include name="repoAdjustDecrease"/>
+					<include name="repoAdjustIncrease"/>
+					<include name="orderProductToReduceLimit"/>
+					<include name="orderCancellationIncreasesLimit"/>
+					<include name="orderRestoreIncreasesLimit"/>
+					<include name="reduceOrderLineItemQtyProductSafeLimitIncrease"/>
+					<include name="increasingOrderLineItemQtyProductSafeLimitDecrease"/>
+					<include name="orderReshipReduceLimit"/>
+					<include name="receiveIndividualBbProduct"/>
+					<include name="receiveEntireBbOrder"/>
+					<include name="repoValueDateIncreaseLimit"/>
+					<include name="arrivedReceiptsIncreaseLimit"/>
+					<include name="arrivedItemReceiptsIncreaseLimit"/>
+					<include name="unReceiveIndividualBbProduct"/>
+				</methods>
+			</class>
+			<!-- JMB-5901 -->
+			<class name="testcases.newFeatures.Q_BuybackHold5901">
+				<methods>
+					<include name="placeBuybackOnHold"/>
+					<include name="removeBuybackOnHold"/>
+					<include name="placeProvidenMetalsBuybackOnHold"/>
+					<include name="verifyOnHoldBbNotListedInCreateWire"/>
+					<include name="placeJMBullionBuybackOnHold"/>
+					<include name="verifyOnHoldJMBullionBbNotListedInCreateWire"/>
+					<include name="placeProvidentBuybackWireOnHold"/>
+					<include name="placeJMBullionBuybackWireOnHold"/>
+					<include name="wireError"/>
+				</methods>
+			</class>
+			<!-- JMB-6424 -->
+			<class name="testcases.newFeatures.Q_FFCInformation_JMB6424_JM">
+			<methods>
+				<include name="newCustomerFFCNotVisible"/>
+				<include name="listBbNoFfcSection"/>
+				<include name="noBankSelected"/>
+				<include name="newCustomerFFC"/>
+				<include name="addFFCToExistingBB"/>
+				<include name="multipleFFCAccounts"/>
+				<include name="saveBbSavesFFCInfo"/>
+				<include name=""/>
+			</methods>
+		</class>
+			<!-- JMB-6208 -->
+			<class name="testcases.buyback.Q_BuybackSettings">
+				<methods>
+					<include name="changeDiySettings"/>
+					<include name="minRequired"/>
+					<include name="diyMaxLimit"/>
+					<include name="resetDiyConfig"/>
+				</methods>
+			</class>
+			<!-- JMB-6534 -->
+			<class name="testcases.newFeatures.PackagingSlipMismatch_JMB6534">
+				<methods>
+					<include name="verifyPriceInPackageSlip"/>
+				</methods>
+			</class>
+			<!-- JMB-5883 -->
+			<class name="testcases.newFeatures.Q_UpdatingButtonsAndLinksToStopExtraClicks_JM5883">
+				<methods>
+					<include name="updatingBtnsToStopExtraClicks_orderForm"/>
+					<include name="updatingBtnsToStopExtraClicks_buyback"/>
+					<include name="updatingBtnsToStopExtraClicks_receipt"/>
+					<include name="updatingBtnsToStopExtraClicks_claim"/>
+					<include name="updatingBtnsToStopExtraClicks_return"/>
+				</methods>
+			</class>
+			<!-- JMB-6885 -->
+			<class name="testcases.newFeatures.Q_ScriptToPutOpsHoldsOnCustomerAccounts_JM6885">
+				<methods>
+					<include name="scriptToPutOpsHoldsOnCustomerAccounts"/>
+				</methods>
+			</class>
+
+		</classes>
+
+	</test>
+
+</suite>

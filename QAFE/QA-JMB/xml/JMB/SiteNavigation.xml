@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page" >
+
+    <test name="Navigation">
+        <classes>
+            <class name="testcases.navigation.Q_JMB_HeaderNavigation">
+                <methods>
+                    <include name="homeIcon"/>
+                    <include name="gold"/>
+                    <include name="silver"/>
+                    <include name="platinum"/>
+                    <include name="copper"/>
+                    <include name="copperRounds"/>
+                    <include name="copperBars"/>
+                    <include name="copperWheatPennies"/>
+                    <include name="palladium"/>
+                    <include name="palladiumBars"/>
+                    <include name="palladiumCoins"/>
+                    <include name="accessories"/>
+                    <include name="accessoriesCoins"/>
+                    <include name="accessoriesBars"/>
+                    <include name="accessoriesApparel"/>
+                    <include name="onSale"/>
+                    <include name="newArrivals"/>
+                    <include name="sellToUs"/>
+                    <include name="charts"/>
+                    <include name="ira"/>
+                    <include name="contact"/>
+                </methods>
+            </class>
+                <class name="testcases.navigation.Q_SiteButtons">
+                    <methods>
+                        <include name="btnSellToUsGuest"/>
+                        <include name="btnSellToUsRegistered"/>
+                        <include name="atcOnSale"/>
+                        <include name="charts"/>
+                        <include name="iraRequest"/>
+                        <include name="iraText"/>
+                        <include name="iraButtons"/>
+                        <exclude name="iraLinks"/>
+                        <exclude name="contactForm"/>
+                    </methods>
+                </class>
+            <class name="testcases.navigation.Q_JMB_FooterNavigation">
+                <methods>
+                    <include name="footerCustomerCareLogin"/>
+                    <include name="footerCustomerCareLogedInUser"/>
+                    <exclude name="footerCustomerCareContactUs"/>
+                    <include name="footerCustomerCareFAQSearch"/>
+                    <include name="footerCustomerCarePrivacyPolicyLink"/>
+                    <include name="footerCustomerCareCookiePolicyLink"/>
+                    <include name="footerCustomerTermsAndConditionsLink"/>
+                    <include name="footerCustomerCareAccessibilityLink"/>
+                    <include name="footerMyAccountAccountLogin"/>
+                    <include name="footerMyAccountAccountLoginUserLoggedIn"/>
+                    <include name="footerMyAccountAccountTrackOrder"/>
+                    <include name="footerMyAccountTrackAnOrderUserLoggedIn"/>
+                    <include name="footerMyAccountOrderHistoryUserLoggedIn"/>
+                    <include name="footerMyAccountOrderHistoryGuest"/>
+                    <include name="footerMyAccountPriceAlerts"/>
+                    <include name="footerMyAccountStorage"/>
+                    <include name="footerMyAccountPersonalInformation"/>
+                    <include name="footerAboutUs"/>
+                    <include name="footerAboutUsCareers"/>
+                    <include name="footerAboutUsCareersBenefits"/>
+                    <include name="footerAboutUsCareersJobOpenings"/>
+                    <include name="footerAboutUsCareersShipping"/>
+                    <include name="footerAboutUsPaymentMethods"/>
+                    <include name="footerAboutUsCustomerReviews"/>
+                    <include name="footerAboutUsMintsInformation"/>
+                    <include name="verifyFAQRecentArticleAndCategoryLinks"/>
+                </methods>
+            </class>
+            </classes>
+    </test>
+</suite>

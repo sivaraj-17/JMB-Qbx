@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Order Shipping Automation Suite" preserve-order="true">
+	<test name="JMB Oeder Shipping Test Cases">
+		<classes>
+			<class name="testcases.order.Q_OrderShipping">
+				<methods>
+					<include name="editShippingDetails" />
+					<include name="switchShippingAddress" />
+					<include name="addShippingAddress" />
+					<include name="verifyPaidOrderAbleToChangeShippingOption" />
+					<include name="addStorageOptionBackToCheckout" />
+					<include name="verifyShippingOptionsLessThan$199Admin" />
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan16OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan16OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$15000AndLessThan16OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan200OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan200OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$15000AndLessThan200OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$25000AndLessThan200OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan300OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$25000AndLessThan300OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan450OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$25000AndLessThan450OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan750OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$15000AndLessThan750OzAdmin" />
+					<include name="verifyShippingOptionsOver750OzAdmin" />
+					<include name="verifyShippingOptionsOver$25000Admin" />
+					<include name="verifyOrderShippingOptionsUPSStaysOnAdmin" />
+					<include name="allowUsersToUndoStorage" />
+					<include name="verifyAutoFlagMassiveOrdersToShipCommercial" />
+					
+					<include name="verifyShippigMethodUpdateinOrderForm_JMB7316" />
+					<include name="verifyShippingCalendar_JMB7527" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

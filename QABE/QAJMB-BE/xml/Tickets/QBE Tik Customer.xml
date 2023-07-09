@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BE Customer Tickets Suite" preserve-order="true">
+	<test name="BE Customer Tickets Test Cases">
+		<classes>
+			<!-- JMB-6254, JMB-6038, JMB-6153, JMB-7199 -->
+			<class name="testcases.customerView.Q_CustomerPage">
+				<methods>
+					<include name="verifyForceShippingToUSPSRegMail"/>
+					<include name="verifyForceShippingToUSPSMail"/>
+					<include name="verifyForceShippingToUPSMail"/>
+					<include name="verifyMLFInvoiceOver100RemovesQCstatus"/>
+					<include name="CustomerNotesTimestamp"/>
+					<include name="verifyCustomerLogSwitchUser" />
+				</methods>
+			</class>
+
+		</classes>
+
+	</test>
+
+</suite>

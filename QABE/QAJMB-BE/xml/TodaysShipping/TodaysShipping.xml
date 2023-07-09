@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BEQ-JMB Today's Shipping Automation Suite" preserve-order="true">
+	<test name="Today's Shipping">
+		<classes>
+			<class name="testcases.shipping.Q_TodaysShipping">
+				<methods>
+					<include name="headerListings"/>
+					<include name="badAddress"/>
+					<include name="drawBalance"/>
+					<include name="viewOnHoldOrders"/>
+					<include name="viewOrdersError"/>
+					
+					<include name="verifyShippingJobsWithoutPermission30"/>
+					<include name="verifyShippingJobsWithPermission30"/>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+</suite>

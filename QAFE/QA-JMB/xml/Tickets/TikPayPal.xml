@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Tickets PayPal Automation Suite" preserve-order="true">
+	<test name="JMB Tickets PayPal Test Cases">
+		<classes>
+			<!-- JMB-6079, JMB-5894-->
+			<class name="testcases.payPal.Q_JMB_PayPalCheckout">
+				<methods>
+					<include name="ppOrderWithCoupon50"/>
+					<include name="noShippingOrderOver299WithCoupon"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Back End Sanity Suite Test cases"  preserve-order="true">
+	<test name="Validate site frontend product count, rating and spot price" >
+ 		<classes>
+ 			<class name="testcases.sanity.FrontEnd" ></class>
+		</classes> 
+ 	</test>
+	<test name="Validate site backend functionality" >
+		<classes>
+			<class name="testcases.sanity.BackEnd" ></class>
+		</classes>
+	</test>
+ </suite>

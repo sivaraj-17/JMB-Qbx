@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page" >
+
+    <test name="BuyBack Suite">
+        <classes>
+                <class name="testcases.buyback.Q_CreateBuyback">
+                    <methods>
+                        <include name="verifyBuybackUserPermission"/>
+                        <include name="isCustomer" />
+                        <include name="newBuybackCustomer"/>
+                        <include name="newBuybackCustomerSkipCC"/>
+                        <include name="existingUser"/>
+                        <include name="addNewAddressExistingUser"/>
+                        <include name="existingUserSkipCreditCard"/>
+                        <include name="providentBuyback"/>
+                        <include name="jmBullionBuyback"/>
+                        <include name="over1000RequireCreditCard"/>
+                        <include name="paymentTypeWireRequireBankInfo"/>
+                        <include name="verifyWireFee"/>
+                        <include name="verifyCheckPaymentFee"/>
+                        <include name="verifyUnitPriceTooHigh"/>
+                        <include name="verifyUnitPriceTooLow"/>
+                        <include name="statusAwaitingDelivery"/>
+                        <include name="reportableItem"/>
+                        <include name="addingMultipleProducts"/>
+                        <include name="duplicateProductAlert"/>
+                        <include name="zeroPremiumProduct"/>
+                        <include name="w9AlertNotDisplayedTaxInfoEntered"/>
+                        <include name="NoW9AlertNonReportableItem"/>
+                        <include name="w9AlertReportableItemAndNoTaxInfo"/>
+                        <include name="noW2InformationPreset"/>
+                        <include name="expiredCreditCard"/>
+                        <include name="newBuyBackPopupAbove$500000"/>
+                        
+                        <include name="verifyClearanceOfInternalStatus_cancelledBb"/>
+                        <exclude name="largeEditBbWarningMessage"/>
+                    </methods>
+                </class>
+
+            </classes>
+    </test>
+</suite>

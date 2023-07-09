@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Cart Automation Suite" preserve-order="true">
+    <test name="JMB Verify Cart Test Cases">
+        <classes>
+
+            <class name="testcases.cart.Q_JMB_CheckoutRules">
+                <methods>
+                    <include name="maxCartQuantity"/>
+                    <include name="bwMinRequired"/>
+                    <include name="allButCreditCardPP"/>
+                    <include name="allMetodsAvailable"/>
+                    <include name="bitCoinBankwireOnly"/>
+                    <include name="noCreditOrPaypal"/>
+                    <include name="bankwireOnly"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>

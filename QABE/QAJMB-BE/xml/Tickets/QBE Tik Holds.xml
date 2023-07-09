@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BE Holds Tickets Suite" preserve-order="true">
+	<test name="BE Holds Tickets Test Cases">
+		<classes>
+			<!-- JMB-4521 -->
+			<class name="testcases.hold.Q_OrderVerification">
+				<methods>
+					<include name="abilityToFlagCustomerOrder_registered"/>
+					<include name="abilityToFlagCustomerBuyback_registered"/>
+					<include name="abilityToFlagCustomerOrder_guest"/>
+					<include name="verifyFlagMsg_guest"/>
+				</methods>
+			</class>
+
+		</classes>
+
+	</test>
+
+</suite>

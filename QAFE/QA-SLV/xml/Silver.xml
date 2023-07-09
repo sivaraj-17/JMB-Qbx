@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Automation Suite" preserve-order="true">
+    <suite-files>
+        <suite-file path="Slv/Account.xml" />
+        <suite-file path="Slv/CartFunction.xml" />
+        <suite-file path="Slv/CheckoutRules.xml" />
+        <suite-file path="Slv/QcCheckoutRules.xml" />
+        <suite-file path="Slv/GuestCheckout.xml" />
+        <suite-file path="Slv/RegisteredCheckout.xml" />
+        <suite-file path="Slv/PayPal.xml" />
+    </suite-files>
+</suite>

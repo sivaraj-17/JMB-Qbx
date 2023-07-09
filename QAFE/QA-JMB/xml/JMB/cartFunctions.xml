@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Cart Automation Suite" preserve-order="true">
+    <test name="JMB Verify Cart Test Cases">
+        <classes>
+            <class name="testcases.cart.Q_JMB_CartFunctions">
+                <methods>
+                    <include name="verifyCart"/>
+                    <include name="editCart"/>
+                    <include name="editCartModify"/>
+                    <include name="modalPaymentTypePricing"/>
+                    <include name="productPagePaymentTypePricing"/>
+                    <include name="cartPagePaymentTypePricing"/>
+                    <include name="itemMultiplequantity"/>
+                    <include name="giftCertificate"/>
+                    <include name="removeGiftCertificate"/>
+                    <include name="verifyUpdatedCartLanguagePaperCheck"/>
+                    <include name="verifyUpdatedCartLanguageACH"/>
+                    <include name="verifyUpdatedCartLanguageBankWire"/>
+                    <include name="sortingCategoryPagesWithPriceListCheck"/>
+                    <exclude name="bankwireOrderAndModifyInNewTabBelowWireLimit"/>
+                    <exclude name="verifyProductPremiumNotDisplayedOnPLP"/>
+                    <include name="verifyOrderTotal"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>

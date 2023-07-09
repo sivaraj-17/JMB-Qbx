@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Tickets Suite" preserve-order="true">
+  	<suite-files>
+  		<suite-file path="tickets/TikNegative.xml" />
+  		<suite-file path="tickets/TikNewFeatures.xml" />
+  		<suite-file path="tickets/TikPayPal.xml" />
+  		<suite-file path="tickets/TikSalesTax.xml" />
+  		<suite-file path="tickets/TikShippingUpgrade.xml" />
+  		<suite-file path="tickets/TikVerifyCart.xml" />
+  	</suite-files>
+</suite>

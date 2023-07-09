@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion 3DS Guest Checkout Automation Suite" preserve-order="true">
+	<test name="JMB 3DS Guest User Checkout Test Cases">
+		<classes>
+			<class name="testcases.guest.Q_JMB_Guest3ds">
+				<methods>
+					<include name="turn3DSOn"/>
+					<include name="guestFrictionlessSuccess001"/>
+					<include name="guestFrictionlessNoAuth001"/>
+					<include name="guestFrictionlessUnavailableAuth001"/>
+					<include name="guestFrictionlessWithRejection001"/>
+					<include name="guestEnrollmentCheckError001"/>
+					<include name="guestSetupSucess001"/>
+					<include name="guestSetupAuthUnsuccessful001"/>
+					<include name="guestSetupAuthUnavailable001"/>
+					<include name="turn3DSOff"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Guest Checkout Test Cases -->
+  	
+</suite>

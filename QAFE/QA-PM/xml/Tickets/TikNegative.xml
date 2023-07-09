@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Tickets Negative" preserve-order="true">
+	<test name="PM Tickets Negative Test Cases">
+
+		<classes>
+			<!-- JMB-6039, JMB-6650 -->
+			<class name="testcases.negative.Q_PM_Negative">
+				<methods>
+					<include name="expiringCardAlert"/>
+					<include name="expiringCardCheckout"/>
+					<include name="verifyCwtANotDisplayingNewAddrAfterEditingAddress"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

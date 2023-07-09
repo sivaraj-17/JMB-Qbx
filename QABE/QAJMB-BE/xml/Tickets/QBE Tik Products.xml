@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BE Product Form Tickets Suite" preserve-order="false">
+	<test name="BE Product Form Tickets Test Cases">
+		<classes>
+			<!-- JMB-6184, JMB-6214, JMB-6717 ,JMB-4229, JMB-6378, JMB-6804, JMB-4461, 
+			JMB-6078, JMB-4511, JMB-6839, JMB-6852, JMB-6721, JMB-6718, JMB-6942, JMB-7042, 
+			JMB-7041, JMB-6968, JMB-7072, JMB-6460, JMB-7214 -->
+			<class name ="testcases.products.Q_ProductsTestCases">
+				<methods>
+					<include name="verifyNotesCanBeAddedInPrdPages" />
+					<include name="manageOOSProductVisibilityInPLP_checkboxOnInBackend" />
+					<include name="manageOOSProductVisibilityInPLP_checkboxOffInBackend" />
+					<include name="productStatusListChanges_invCountCheck" />
+					<include name="productStatusListChanges_carrySort" />
+					<include name="verifyProdExchangeRegInventory"/>
+					<include name="verifyProdExchangeDallasInventory"/>
+					<include name="verifyProductsCanbeDeletedFromRepo"/>
+					<include name="dallasInHandReport"/>
+					<include name="searchDallasInHandReport"/>
+					<include name="verifyGoldCarryTotal"/>
+					<include name="verifyUnArriveRecieptFunctionality" />
+					<include name="verifyChild1AndChild2InventoryChangesAfterParentOrder"/>
+					<include name="verifyParentAndChild2InventoryChangesAfterChild1Order"/>
+					<include name="verifyParentAndChild1InventoryChangesAfterChild2Order" />
+					<include name="copperAsOnlyFixedPricing" />
+					<include name="adjustInhandImprovement" />
+					<include name="productInhandExchangeImprovement" />
+					<include name="eliminateShipWeightAndSyncWithAmark" />
+					<include name="updateFollowUpDateColumn_highPriority" />
+					<include name="updateFollowUpDateColumn_lowPriority" />
+					<include name="abilityToCreateAndDownloadQuicksightReportToCSV" />
+					<include name="fixHedgePage" />
+					<include name="validateBBCheckoutWhenUncheckedProductIsUsed" />
+					<include name="verifyAdminProductErrorLog" />
+					<include name="verifySupplierPrem_onAddProductPageAndEditProductPage" />
+					<include name="verifyUpdateBtn_withoutEntirePageRefresh_lowInventory_highPriority" />
+					<include name="verifyUpdateBtn_withoutEntirePageRefresh_lowInventory_lowPriority" />
+					<include name="verifyUpdateNoteBtn_withoutEntirePageRefresh_productStatus" />
+					<include name="verifyClearBtn_withoutEntirePageRefresh_productStatus" />
+					<include name="verifyProductPremiumBlender_DIYBuyback" />
+					<include name="verifyAllColumnHeaders_andSpotPriceValues" />
+					<include name="verifyNewProductDefaultToOutOfStock" />
+					<include name="verifyProductStatusPageAdditions" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

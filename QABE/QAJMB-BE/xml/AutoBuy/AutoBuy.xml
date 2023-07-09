@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutoBuy Suite" >
+
+    <test name="AutoBuy Test Cases">
+        <classes>
+            <class name="testcases.autoBuy.Q_AutoBuy">
+                <methods>
+                    <include name="autoBuyVerifyAdminOrderStatus"/>
+                    <include name="autoBuyVerifyAdminDetails"/>
+                    <include name="autoBuySwitchToOrder"/>
+                    <include name="autoBuyVerifyMarginReport"/>
+                    <include name="autoBuyVerifyStatsReport"/>
+                    <include name="autoBuyVerifySalesStatsReport"/>
+                    <include name="autoBuyVerifyTransactionsMissingInventoryReport"/>
+                    <include name="autoBuyVerifySetupsReport"/>
+                </methods>
+            </class>
+            </classes>
+    </test>
+</suite>

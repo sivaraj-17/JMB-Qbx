@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB FE Tickets Suite" preserve-order="true">
+	<test name="JMB FE Tickets Test Cases">
+
+		<classes>
+			<!-- JMB-6056 -->
+			<class name="testcases.account.Q_PM_MyAccount">
+				<methods>
+					<include name="verifyBuyAgain"/>
+				</methods>
+			</class>
+			<!-- JMB-6231, JMB-4831, JMB-5908, JMB-6564-->
+			<class name="testcases.cart.Q_PM_CartFunction">
+				<methods>
+					<include name="verifyUpdatedCartLanguagePaperCheck"/>
+					<include name="verifyUpdatedCartLanguageACH"/>
+					<include name="verifyUpdatedCartLanguageBankWire"/>
+					<include name="sortingCategoryPagesWithPriceListCheck"/>
+				</methods>
+			</class>
+			<!-- JMB-6079 -->
+			<class name="testcases.registered.Q_PM_RegisteredCheckout">
+				<methods>
+					<include name="noShippingOrderOver299WithCoupon"/>
+				</methods>
+			</class>
+			<!-- JMB-6039 -->
+			<class name="testcases.negative.Q_PM_Negative">
+				<methods>
+					<include name="expiringCardAlert"/>
+					<include name="expiringCardCheckout"/>
+				</methods>
+			</class>
+
+			<!-- JMB-5894 -->
+			<class name="testcases.registered.Q_PM_RegisteredCheckout">
+				<methods>
+					<include name="noShippingOrderOver299WithCoupon"/>
+				</methods>
+			</class>
+			<!--  -->
+
+			<!-- JMB- -->
+
+			<!-- JMB- -->
+		</classes>
+	</test>
+
+</suite>

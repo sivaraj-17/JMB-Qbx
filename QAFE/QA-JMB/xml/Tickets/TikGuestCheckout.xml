@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Tickets Guest Checkout Automation Suite" preserve-order="true">
+	<test name="JMB Tickets Guest Checkout Test Cases">
+		<classes>
+			<!-- JMB-3594 -->
+			<class name="testcases.guest.Q_JMB_GuestCheckout">
+				<methods>
+					<include name="verifyProductTitleOnThankYouPage_guest"/>
+					<include name="verifyProductImageOnThankYouPage_guest"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Registered User Checkout Test Cases -->
+  	
+</suite>

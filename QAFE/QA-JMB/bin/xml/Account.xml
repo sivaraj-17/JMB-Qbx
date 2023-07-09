@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Account Automation Suite" preserve-order="true">
+	<test name="JMB My Account Test Cases">
+		<classes>
+			<class name="testcases.account.MyAccount">
+				<methods>
+					<include name="registerNewUser"/>
+					<include name="registerGuestUser"/>
+					<include name="ordersNoOrders"/>
+					<include name="ordersPaging"/>
+					<include name="savedCreditCardList"/>
+					<include name="setCreditCardDefault"/>
+					<include name="addCard"/>
+					<include name="deleteCard"/>
+					<include name="editAccAddress"/>
+					<include name="addValidAddress"/>
+					<include name="deleteAccAddress"/>
+					<include name="paymentAch"/>
+					<include name="switchPcToAch"/>
+					<include name="mailCheck"/>
+					<exclude name="alertTabFormatting"/>
+					<exclude name="verifyBuyAgain"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Account Test Cases -->
+  	
+</suite>

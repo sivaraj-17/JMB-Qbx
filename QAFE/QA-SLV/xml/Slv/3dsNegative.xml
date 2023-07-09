@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver 3DS Negative Automation Suite" preserve-order="true">
+	<test name="Silver 3DS Negative Test Cases">
+		<classes>
+			<class name="testcases.registered.Q_Slv_NegativeScenarios3DS">
+				<methods>
+					<include name="turn3DSOn"/>
+					<include name="negFrictionlessCheckoutSuccess001"/>
+					<include name="negFrictionlessCheckoutNoAuth001"/>
+					<include name="negFrictionlessCheckoutUnAvailableAuth001"/>
+					<include name="negFrictionlessWithRejection001"/>
+					<include name="negEnrolmentCheckoutError001"/>
+					<include name="negSetUpSuccess001"/>
+					<include name="negSetupAuthUnsuccessful001"/>
+					<include name="negSetupAuthUnavailable001"/>
+					<include name="negGuestSetupAuthUnavailable001"/>
+					<include name="turn3DSOff"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

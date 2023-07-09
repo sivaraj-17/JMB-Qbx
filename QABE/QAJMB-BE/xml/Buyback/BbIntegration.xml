@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page" >
+
+    <test name="Integration Buyback test cases">
+        <classes>
+                <class name="testcases.buyback.Q_CreateBuyback">
+                    <methods>
+                        <include name="largeBuyback"/>
+
+                    </methods>
+                </class>
+
+          <class name="testcases.buyback.Q_BbIntegration">
+                <methods>
+                    <include name="pmAccountPage"/>
+                    <include name="jmAccountPage"/>
+                    <include name="jmbInvoiceAdminLink"/>
+                    <include name="payJmbBuybackInvoice"/>
+                    <include name="pmInvoiceAdminLink"/>
+                    <include name="payPmBuybackInvoice"/>
+                </methods>
+            </class>
+
+
+            </classes>
+    </test>
+</suite>

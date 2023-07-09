@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Shipping Upgrade Tickets Suite" preserve-order="true">
+	<test name="JMB Shipping Upgrade Tickets Test Cases">
+		<classes>
+			<!-- JMB-6527 -->
+			<class name ="testcases.shipping.Q_JMB_ShippingUpgrade">
+				<methods>
+					<include name="verifyShippingOptionsLessThan$199SelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan16OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan101OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$1500AndLessThan16OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$30000AndLessThan101OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan450OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$30000AndLessThan450OzSelectUPS3DayAir"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

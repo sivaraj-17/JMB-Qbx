@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Shipping Upgrade Tickets Suite" preserve-order="true">
+	<test name="Silver Shipping Upgrade Tickets Test Cases">
+		<classes>
+			<!-- JMB-6079, JMB-5894 -->
+			<class name="testcases.payPal.Q_Slv_PayPal">
+				<methods>
+					<include name="payPalApplyGiftCertWith50"/>
+					<include name="payPalNoShippingOrderOver299WithCoupon"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

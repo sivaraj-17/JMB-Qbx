@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion AutoBuy Positive Automation Suite" preserve-order="true">
+	<test name="JMB AutoBuy Positive Test Cases">
+		<classes>
+			<class name="testcases.autoBuy.Q_JMB_AutoBuyScenarios">
+				<methods>
+					<include name="launchAutoBuyLandingPage"/>
+					<include name="verifyAutoBuyQuantityLimit"/>
+					<include name="selectAutoBuyProductsGold"/>
+					<include name="selectAutoBuyProductsSilver"/>
+					<include name="selectAutoBuyProductsMultipleMetals"/>
+					<include name="selectAutoBuyProductFromProdPage"/>
+					<include name="autoBuyEditCart"/>
+					<include name="autoBuyWeekly"/>
+					<include name="autoBuyEditAddAdditionalItem"/>
+					<include name="autoBuyBIWeekly"/>
+					<include name="autoBuyEditOrderChangeToACH"/>
+					<include name="autoBuyMonthly"/>
+					<include name="autoBuyEditOrderChangeQtyAndFrequency"/>
+					<include name="autoBuyEditOrderChangeToCCAndUpgradeShipping"/>
+					<include name="autoBuyShippingUpgradeExpShipOver5k"/>
+					<include name="autoBuyShippingUpgradeExpShipUnder5k"/>
+					<include name="autoBuyShippingUpgradeUSPS"/>
+					<include name="autoBuyShippingUpgradeLocalPickup"/>
+					<include name="autoBuyCreditCardVisa"/>
+					<include name="autoBuyCreditCardMasterCard"/>
+					<include name="autoBuyCreditCardAMEX"/>
+					<include name="autoBuyNoOrders"/>
+					<include name="autoBuyInactivateOrder"/>
+					<include name="autoBuyReactivateOrder"/>
+					<include name="autoBuyOrderNoPreviousCCOrShipAddrCCPayment"/>
+					<include name="autoBuyOrderNoPreviousCCOrShipAddrACHPayment"/>
+					<include name="autoBuyCompleteWithNoEndDate"/>
+					
+					<include name="autoBuyUpdateProductPage"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Guest Checkout Test Cases -->
+  	
+</suite>

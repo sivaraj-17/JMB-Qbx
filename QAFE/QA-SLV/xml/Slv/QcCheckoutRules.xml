@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Cart QC Checkout Rules Automation Suite" preserve-order="true">
+    <test name="Silver QC Checkout Rules Test Cases">
+        <classes>
+            <class name="testcases.cart.Q_Slv_QcCheckoutRules">
+                <methods>
+                    <include name="qcBwBcMinReiquired"/>
+                    <include name="qcBwMinReiquired"/>
+                    <include name="allMethodsAvailable"/>
+                    <include name="pPpcBwOnlAvailable"/>
+                    <include name="pPBwOnlAvailable"/>
+                    <include name="BwBCOnlyAvailable"/>
+                    <include name="callCustomerService"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Cart Function Automation Suite" preserve-order="true">
+    <test name="Silver Verify Cart Test Cases">
+        <classes>
+            <class name="testcases.cart.Q_Slv_CartFunctions">
+                <methods>
+                    <include name="verifyCart"/>
+                    <include name="editCart"/>
+                    <include name="modifyCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

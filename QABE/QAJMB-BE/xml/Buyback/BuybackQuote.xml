@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page" >
+
+    <test name="BuyBack Suite">
+        <classes>
+                <class name="testcases.buyback.Q_BuybackQuote">
+                    <methods>
+                        <include name="verifySaveAsQuoteFunctionality"/>
+                        <include name="editBuybackQuote" />
+                        <include name="refreshBuybackQuote"/>
+                        <include name="orderNumberSearch"/>
+                        <include name="emailOrderSearch"/>
+                        <include name="nameOrderSearch"/>
+                        <include name="verifyBBCanBeAddedFromAdminPage"/>
+                        <include name="verifyBBCanBeAddedFromCustomerPage"/>
+                        <include name="verifyBBCanBeAddedFromPMPage"/>
+                        <include name="verifyBBCanBeAddedFromPMCustomerPage"/>
+                    </methods>
+                </class>
+
+            </classes>
+    </test>
+</suite>

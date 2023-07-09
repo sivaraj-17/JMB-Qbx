@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Cart Automation Suite" preserve-order="true">
+    <suite-files>
+        <suite-file path="cartFunctions.xml" />
+        <suite-file path="checkoutRules.xml" />
+        <suite-file path="qcCheckoutRules.xml" />
+    </suite-files>
+
+</suite>

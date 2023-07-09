@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page" >
+
+    <test name="BuyBack Suite">
+        <classes>
+
+            <class name="testcases.buyback.Q_RequireAttention">
+                <methods>
+                    <include name="editCartNo"/>
+                    <include name="newbbInternalStatus"/>
+                    <include name="changeInternalStatus"/>
+                    <include name="restorePendingInternalStatusDefault"/>
+                    <include name="restoreReceivedInternalStatusDefault"/>
+                    <include name="ticketNumberEdit"/>
+                    <include name="emailSearchEdit"/>
+                    <include name="searchNameAndEdit"/>
+                    <include name="SearchAndEditInternalStatusJMB"/>
+                    <include name="searchCartNumberEdit"/>
+                    <include name="searchCartNumberNoRecord"/>
+                    <include name="cancelledLabelRequested"/>
+                    <include name="cancelledBuybackAppearInRequiredAttentionSearch"/>
+                    <include name="adjustmentBuybacksRequiringAttentionDropdownReport"/>
+                    
+                    <include name="verifyBuybackIraFilter"/>
+                </methods>
+            </class>
+            </classes>
+    </test>
+</suite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM FE Tickets Suite" preserve-order="true">
+	<test name="PM FE Tickets Test Cases">
+		<classes>
+			<!-- JMB-6564 -->
+			<class name="testcases.tickets.Q_PM_WireOrderChangeBelowLimit_JMB6564_PM">
+				<methods>
+					<include name="bankwireOrderAndModifyInNewTabBelowWireLimit"/>
+				</methods>
+			</class>
+			<!-- JMB-6420 -->
+			<class name="testcases.tickets.Q_PM_ContinueShopping_JMB4831_PM">
+				<methods>
+					<include name="verifyContinueShoppingButton"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Shipping Automation Suite" preserve-order="true">
+	<test name="JMB Shipping Upgrade Test Cases">
+		<classes>
+			<class name="testcases.deviceFingerprint.Q_JMB_DeviceFingerprint">
+				<methods>
+					<include name="deviceFingerPrintSetup"/>
+					<include name="registerLoginBlocking"/>
+					<include name="accountRegistrationBlocking"/>
+					<include name="orderCheckoutBlocking"/>
+					<include name="addCreditCardBlocking"/>
+					<include name="contactUsBlocking"/>
+					<include name="forgotPasswordBlocking"/>
+					<include name="customerFraudBlocking"/>
+					<include name="accountRegistrationPostBlockingTime"/>
+					<include name="addCreditCardPostBlockingTime"/>
+					<include name="contactUsPostBlockingTime"/>
+					<include name="registerLoginPostBlockingTime"/>
+					<include name="orderCheckoutPostBlockingTime"/>
+					<include name="forgotPasswordPostBlockingTime"/>
+					<include name="deviceFingerPrintCleanup"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

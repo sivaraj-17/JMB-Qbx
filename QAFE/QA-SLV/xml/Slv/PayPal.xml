@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Shipping Automation Suite" preserve-order="true">
+	<test name="Silver PayPal Test Cases">
+		<classes>
+			<class name="testcases.payPal.Q_Slv_PayPal">
+				<methods>
+					<include name="payPal99Shipping0"/>
+					<include name="payPal98Shipping399"/>
+					<include name="payPal500DefShippingTax"/>
+					<include name="payPal500PriShippingTax"/>
+					<include name="payPal5003DayShippingTax"/>
+					<include name="payPal1kPlusNoShippingNoTax"/>
+					<include name="payPal1kPlusPriShippingTax"/>
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

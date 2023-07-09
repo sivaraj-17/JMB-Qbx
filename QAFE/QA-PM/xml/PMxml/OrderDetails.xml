@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Pricing Details Automation Suite" preserve-order="true">
+
+	<test name="PM Cart Pricing Details Test Cases">
+		<classes>
+			<class name="testcases.cart.Q_PM_OrderDetails">
+				<methods>
+					<include name="modalPriceList"/>
+					<include name="pdpPriceList"/>
+					<include name="cartPriceList"/>
+					<include name="multipleQuantityPricing"/>
+					<include name="addCoupon"/>
+					<include name="removeDiscount"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

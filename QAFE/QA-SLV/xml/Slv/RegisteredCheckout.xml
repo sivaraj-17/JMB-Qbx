@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Registered User Checkout Automation Suite" preserve-order="true">
+	<test name="Silver Registered User Checkout Test Cases">
+		<classes>
+			<class name="testcases.registered.Q_Slv_RegisteredUser">
+				<methods>
+					<include name="turn3DSOff"/>
+					<include name="persistentCart"/>
+					<include name="bridgeRegisteredCheckout"/>
+					<include name="masterCard"/>
+					<include name="ccNoTaxMinShipping"/>
+					<include name="ccTaxNoShipping"/>
+					<include name="ccTaxShippingUpgrade"/>
+					<include name="ccNoTaxShippingUpgrade"/>
+					<include name="paidOrder"/>
+					<include name="pendingOrder"/>
+					<include name="qcCCEditShipping"/>
+					<include name="qcCC3SwitchShippingAddress"/>
+					<include name="switchPayment"/>
+					<include name="applyGiftCert"/>
+					<include name="bankwireWithoutSavedCC"/>
+					<include name="bankwireCheckout"/>
+					<include name="paperCheckWithoutSavedCC"/>
+					<include name="paperCheckout"/>
+					<include name="paymentViaACH"/>
+					
+					<include name="verifyProductTitleOnThankYouPage_registered"/>
+					<include name="registerOrderBillingAddress"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Registered User Checkout Test Cases -->
+  	
+</suite>

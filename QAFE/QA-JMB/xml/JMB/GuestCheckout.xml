@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Guest Checkout Automation Suite" preserve-order="true">
+	<test name="JMB Guest User Checkout Test Cases">
+		<classes>
+			<class name="testcases.guest.Q_JMB_GuestCheckout">
+				<methods>
+					<include name="turn3DSOff"/>
+					<include name="existingEmail"/>
+					<include name="guestCreditCard"/>
+					<include name="guestBankwire"/>
+					<include name="guestPaperCheck"/>
+					<include name="verifyProductTitleOnThankYouPage_guest"/>
+					<include name="verifyProductImageOnThankYouPage_guest"/>
+					<include name="guestOrderBillingAddress"/>
+					
+					<include name="verifyRegisteredCustomerAbleToCheckoutAsGuest"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Guest Checkout Test Cases -->
+  	
+</suite>

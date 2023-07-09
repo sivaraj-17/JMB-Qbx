@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver 3DS Off Registered User Checkout Automation Suite" preserve-order="true">
+	<test name="Silver 3DS Off Registered User Checkout Test Cases">
+		<classes>
+			<class name="testcases.registered.Q_Slv_Registered3DsOff">
+				<methods>
+					<include name="turn3DSOff"/>
+					<include name="FrictionlessCheckoutSuccessVisa"/>
+					<include name="FrictionlessCheckoutSuccessMc"/>
+					<include name="FrictionlessCheckoutSuccessAmex"/>
+					<include name="FrictionlessNoAuthVisa"/>
+					<include name="FrictionlessNoAuthNasterCard"/>
+					<include name="FrictionlessNoAuthAmex"/>
+					<include name="FrictionlessUnavailableAuthVisa"/>
+					<include name="FrictionlessUnavailableAuthMc"/>
+					<include name="FrictionlessUnavailableAuthAmex"/>
+					<include name="FrictionlessWithRejectioVisa"/>
+					<include name="FrictionlessWithRejectioMc"/>
+					<include name="FrictionlessWithRejectionAmex"/>
+					<include name="enrolmentCheckErrorVisa"/>
+					<include name="enrolmentCheckErrorMc"/>
+					<include name="enrolmentCheckErrorAmex"/>
+					<include name="setUpSuccessVisa"/>
+					<include name="setUpSuccessMc"/>
+					<include name="setUpSuccessAmex"/>
+					<include name="setupAuthUnsuccessfulVisa"/>
+					<include name="setupAuthUnsuccessfulMc"/>
+					<include name="setupAuthUnsuccessfulAmex"/>
+					<include name="setupAuthUnavailableVisa"/>
+					<include name="setupAuthUnavailableMc"/>
+					<include name="setupAuthUnavailableAmex"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

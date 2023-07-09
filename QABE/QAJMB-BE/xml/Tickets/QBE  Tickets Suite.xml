@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Backend Tickets Suite" preserve-order="true">
+	<suite-files>
+		<suite-file path="QBE Tik Admin.xml" />
+		<suite-file path="QBE Tik Buyback.xml" />
+		<suite-file path="QBE Tik Customer.xml" />
+		<suite-file path="QBE Tik Holds.xml" />
+		<suite-file path="QBE Tik Order.xml" />
+		<suite-file path="QBE Tik Products.xml" />
+	</suite-files>
+  	
+</suite>

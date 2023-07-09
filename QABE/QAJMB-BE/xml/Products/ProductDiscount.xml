@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Product Discount Tier Automation Suite" preserve-order="true">
+	<test name="JMB Product Discount Test Cases">
+		<classes>
+			<class name="testcases.products.Q_ProductDiscounts">
+				<methods>
+					<include name="removeJmbProductDiscounts" />
+					<include name="jmbAddDiscount" />
+					<include name="verifyPdpJmbDiscounts" />
+					<include name="removeSilverProductDiscounts" />
+					<include name="silverAddDiscount" />
+					<include name="verifyPdpSilverDiscounts" />
+					<include name="removePMProductDiscounts" />
+					<include name="pmAddDiscount" />
+					<include name="verifyPdpPMDiscounts" />
+					<include name="" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

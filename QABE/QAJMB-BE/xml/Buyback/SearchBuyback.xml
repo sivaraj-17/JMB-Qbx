@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page" >
+
+    <test name="BuyBack Suite">
+        <classes>
+            <class name="testcases.buyback.Q_SearchBuyback">
+                <methods>
+                    <include name="orderNumberSearch"/>
+                    <include name="emailOrderSearch"/>
+                    <include name="nameOrderSearch"/>
+                    <include name="defaultSearch"/>
+                    <include name="statusSearch"/>
+                    <include name="secondSearchStatus"/>
+                    <include name="multipleSearch"/>
+                    <include name="noRecordsSearch"/>
+                    <include name="listPagination"/>
+                    <include name="supplierSearch"/>
+                </methods>
+            </class>
+            </classes>
+    </test>
+</suite>

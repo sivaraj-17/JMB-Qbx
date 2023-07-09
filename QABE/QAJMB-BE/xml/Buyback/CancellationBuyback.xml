@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page" >
+
+    <test name="BuyBack Suite">
+        <classes>
+
+          <class name="testcases.buyback.Q_BuybackCancellation">
+                <methods>
+                    <include name="bbCancellationNotAllowed"/>
+                    <include name="dontCancelBB"/>
+                    <include name="skipCancelFeeAndCancel"/>
+                    <include name="reInstateBb"/>
+                </methods>
+            </class>
+
+            </classes>
+    </test>
+</suite>

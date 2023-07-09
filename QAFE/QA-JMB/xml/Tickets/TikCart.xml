@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Tickets Cart Automation Suite" preserve-order="true">
+    <test name="JMB Tickets Cart Test Cases">
+        <classes>
+            <!-- JMB-6231, JMB-5908, JMB-6564, 6214 -->
+            <class name="testcases.cart.Q_JMB_CartFunctions">
+                <methods>
+                    <include name="verifyUpdatedCartLanguagePaperCheck"/>
+                    <include name="verifyUpdatedCartLanguageACH"/>
+                    <include name="verifyUpdatedCartLanguageBankWire"/>
+                    <include name="sortingCategoryPagesWithPriceListCheck"/>
+                    <include name="bankwireOrderAndModifyInNewTabBelowWireLimit"/>
+                    <include name="verifyProductPremiumNotDisplayedOnPLP"/>
+                    <include name="jmb_cartLimit_Verification001"/>
+                    <include name="jmb_cartLimit_Verification002"/>
+                    <include name="jmb_cartLimit_Verification003"/>
+                    <include name="jmb_cartLimit_Verification004"/>
+                    <include name="jmb_cartLimit_Verification005"/>
+                    <include name="jmb_cartLimit_Verification006"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+</suite>

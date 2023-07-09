@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Shipping Upgrade Tickets Suite" preserve-order="true">
+	<test name="Silver Shipping Upgrade Tickets Test Cases">
+		<classes>
+			<!-- JMB-5357 -->
+			<class name ="testcases.newFeatures.Q_Slv_CheckForErrorsInConfPage_JMB5357_SLV">
+				<methods>
+					<include name="checkBlankScreen"/>
+				</methods>
+			</class>
+			<!-- JMB-5704 -->
+			<class name ="testcases.newFeatures.Q_Slv_EnforceMinimumPasswordComplexity_JMB5704_SLV">
+				<methods>
+					<include name="registerNewUserWithInvalidPassword"/>
+					<include name="registerGuestUserWithInvalidPassword"/>
+					<include name="changePasswordWithInvalidInput"/>
+					<include name="changePasswordWithvalidInput"/>
+					<include name="registerGuestUserWithvalidInput"/>
+				</methods>
+			</class>
+			<!-- JMB-6967 -->
+			<class name ="testcases.newFeatures.Q_Slv_SearchBarFunctionality_6967">
+				<methods>
+					<include name="searchBarFunctionality"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

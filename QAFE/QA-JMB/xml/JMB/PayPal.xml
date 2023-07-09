@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Shipping Automation Suite" preserve-order="true">
+	<test name="JMB Shipping Upgrade Test Cases">
+		<classes>
+			<class name="testcases.payPal.Q_JMB_PayPalCheckout">
+				<methods>
+					<include name="payPal98Shipping399"/>
+					<include name="payPalDefShippingTax"/>
+					<include name="payPal500PriShippingTax"/>
+					<include name="payPal5003DayShippingTax"/>
+					<include name="payPal1kPlusNoShippingNoTax"/>
+					<include name="payPal1kPlusPriShippingTax"/>
+					<include name="verifyPayPalPayment"/>
+					<exclude name="ppOrderWithCoupon50"/>
+					<exclude name="noShippingOrderOver299WithCoupon"/>
+					
+					<include name="verifyUpdatesForNewPayPalViaBrainTreeRegisteredUser"/>
+					<include name="verifyUpdatesForNewPayPalViaBrainTreeGuestUser"/>
+					<include name="verifyCouponCodeIsAppliedCorrectlyToCustomerOrder"/>
+					<include name="verifyPlacedPayPalOrders"/>
+					<include name="verifyAddressVerificationCheckBox"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

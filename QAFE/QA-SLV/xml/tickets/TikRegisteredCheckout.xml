@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Registered User Checkout Tickets Suite" preserve-order="true">
+	<test name="Silver Registered User Checkout Tickets Test Cases">
+		<classes>
+			<!-- JMB-3594 -->
+			<class name ="testcases.registered.Q_Slv_RegisteredUser">
+				<methods>
+					<include name="verifyProductTitleOnThankYouPage_registered"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

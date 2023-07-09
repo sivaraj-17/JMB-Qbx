@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Order Invoice Automation Suite" preserve-order="true">
+	<test name="JMB Order Invoice Test Cases">
+		<classes>
+			<class name="testcases.order.Q_OrderInvoices">
+				<methods>
+					<include name="createAndPayInvoice" />
+					<include name="payInvoiceViewBtn" />
+					<include name="cancelInvoice" />
+					<include name="claimsInvoiceLink" />
+					<include name="verifyInvoicePayment_markPaidInAdmin" />
+					
+					<include name="Invoice1kHold_updateInvoiceDetails_JMB4501" />
+					<include name="Invoice1kHold_updateCancellationDetails_JMB4501" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

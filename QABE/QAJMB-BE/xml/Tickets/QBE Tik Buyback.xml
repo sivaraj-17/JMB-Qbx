@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Backend Buyback Tickets" preserve-order="true">
+	<test name="Buyback Tickets Test Cases">
+		<classes>
+			<!--JMB-6319 -->
+			<class name="testcases.buyback.Q_SearchBuyback">
+				<methods>
+					<include name= "bbTotal_JM6319"/>
+				</methods>
+			</class>
+
+			<!-- JMB-6414, JMB-6098, JMB-7173, JMB-7406 -->
+			<class name="testcases.buyback.Q_CreateBuyback">
+				<methods>
+					<include name="newBuyBackverifyDropOffOption"/>
+					<include name="premiumLogger_JM6098"/>
+					<include name="newBuyBackPopupAbove$500000"/>
+					<include name="verifyClearanceOfInternalStatus_cancelledBb"/>
+                    <exclude name="largeEditBbWarningMessage"/>
+				</methods>
+			</class>
+			<!-- JMB-6756, JMB-6839, JMB-6803, JMB-6458, JMB-5904 -->
+			<class name="testcases.buyback.Q_EditBuyBack">
+				<methods>
+					<include name="verifyBBNotesAndLogs"/>
+					<include name="duplicateBuybackPaymentAccount"/>
+					<include name="bbGoBackButton"/>
+					<include name="verifyAlertOnBBOver$750k"/>
+					<include name="buybackClaimModification"/>
+				</methods>
+			</class>
+			<!-- JMB-6864, JMB-6488 -->
+			<class name="testcases.buyback.Q_RequireAttention">
+                <methods>
+                    <include name="cancelledBuybackAppearInRequiredAttentionSearch"/>
+                    <include name="adjustmentBuybacksRequiringAttentionDropdownReport"/>
+                    <include name="verifyBuybackIraFilter"/>
+                </methods>
+            </class>
+            
+            <!--JMB-6774 -->
+			<class name="testcases.buyback.Q_BuybackSettings">
+				<methods>
+					<include name= "verifyProductRankingDragandDropAndEnterRank"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

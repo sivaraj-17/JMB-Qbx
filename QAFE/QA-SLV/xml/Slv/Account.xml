@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Account Automation Suite" preserve-order="true">
+	<test name="Silver My Account Test Cases">
+		<classes>
+			<class name="testcases.account.Q_Slv_MyAccount">
+				<methods>
+					<include name="registerNewUser"/>
+					<include name="registerGuestUser"/>
+					<include name="savedCreditCardList"/>
+					<include name="savedShippinAddress"/>
+					<include name="editAccountPageShipAddress"/>
+					<include name="addDeleteShippinAddress"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

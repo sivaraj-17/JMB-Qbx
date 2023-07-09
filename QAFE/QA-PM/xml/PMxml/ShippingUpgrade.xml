@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Shipping Upgrade Automation Suite" preserve-order="true">
+	<test name="PM Shipping Upgrade Test Cases">
+		<classes>
+			<class name="testcases.shipping.Q_PM_ShippingUpgrade">
+				<methods>
+					<include name="verifyShippingOptionsLessThan$199SelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan16OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan16OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$15000AndLessThan16OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan200OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan200OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$25000AndLessThan200OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan300OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$25000AndLessThan300OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan450OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$25000AndLessThan450OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan750OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsLessThan$15000AndLessThan750OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsOver750OzSelectUPS3Day"/>
+					<include name="verifyShippingOptionsOver$25000SelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsDefaultToBaseAfterLogOff"/>
+					<include name="verifyShippingOptionChangesMatchesOrderReview"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- Registered User Checkout Test Cases -->
+  	
+</suite>

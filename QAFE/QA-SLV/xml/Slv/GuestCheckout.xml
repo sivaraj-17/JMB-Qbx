@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Guest Checkout Automation Suite" preserve-order="true">
+	<test name="Silver User Checkout Test Cases">
+		<classes>
+			<class name="testcases.guest.Q_Slv_GuestCheckout">
+				<methods>
+					<include name="turn3DSOff"/>
+					<include name="existingEmail"/>
+					<include name="guestCreditCard"/>
+					<include name="guesBankwire"/>
+					<include name="guestPaperCheck"/>
+					<include name="verifyProductTitleOnThankYouPage_guest"/>
+					<include name="guestOrderBillingAddress"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

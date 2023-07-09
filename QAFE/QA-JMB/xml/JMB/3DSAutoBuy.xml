@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion 3DS AutoBuy Automation Suite" preserve-order="true">
+	<test name="JMB 3DS AutoBuy Test Cases">
+		<classes>
+			<class name="testcases.autoBuy.Q_JMB_AutoBuyScenarios3DS">
+				<methods>
+					<include name="turn3DSOn"/>
+					<include name="autoBuyCreditCardVisa"/>
+					<include name="autoBuyCreditCardMasterCard"/>
+					<include name="autoBuyCreditCardAMEX"/>
+					<include name="turn3DSOff"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Guest Checkout Test Cases -->
+  	
+</suite>

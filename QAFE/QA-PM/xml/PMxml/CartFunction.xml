@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Cart Functions Automation Suite" preserve-order="true">
+	<test name="PM Cart Function Test Cases">
+		<classes>
+			<class name="testcases.cart.Q_PM_CartFunction">
+				<methods>
+					<include name="increaseQtyModal"/>
+					<include name="decreaseQtyModal"/>
+					<include name="pdpAddItem"/>
+					<include name="pdpIncreaseQty"/>
+					<include name="pdpReduceQty"/>
+					<include name="verifyCart"/>
+					<include name="editVerifyCart"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+  	
+</suite>

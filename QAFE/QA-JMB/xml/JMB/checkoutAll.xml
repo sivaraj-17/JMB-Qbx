@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Automation Suite" preserve-order="true">
+
+    <!-- My Account Suite -->
+    <test name="JMB Automation Test Cases">
+        <classes>
+            <class name="testcases.registered.Q_JMB_RegisteredUser">
+                <methods>
+                    <include name="persistantCart"/>
+                    <include name="bridgeRegisteredCheckout"/>
+                    <include name="masterCardTaxNoShipping"/>
+                    <include name="ccNoTaxMinShipping"/>
+                    <include name="ccNoTaxNoShipping"/>
+                    <include name="ccTaxShipping"/>
+                    <include name="ccTaxShippingUpgrade"/>
+                    <include name="ccGiftCertifcate"/>
+                    <include name="pendingOrder"/>
+                    <include name="paidOrder"/>
+                    <include name="switchPayment"/>
+                    <include name="switchShippingAddress"/>
+                    <include name="editShippingAddress"/>
+                    <include name="bankwireNoDefaults"/>
+                    <include name="bankwirePayment"/>
+                    <include name="paperCheckNoDefaults"/>
+                    <include name="paperCheckPayment"/>
+                    <include name="eCheckCheckout"/>
+                    <include name="achCheckout"/>
+                    <include name="militaryCustomer"/>
+                    <include name="lNameSpecialCharApostrophe"/>
+                    <include name="presale"/>
+                </methods>
+            </class>
+            <class name="testcases.shipping.ShippingUpgrade">
+                <methods>
+                    <include name="guestShippingMinDefault"/>
+                    <include name="guestDefaultShipping"/>
+                    <include name="guestShippingMinUPS3Day"/>
+                    <include name="guestShippingUpgradePri"/>
+                    <include name="guestShippingLess1K3day"/>
+                    <include name="guestShipping3DayTc2"/>
+                    <include name="regShippingLess500Pri"/>
+                    <include name="registeredMinShippingCharge"/>
+                    <include name="registeredMinShippingNoCharge"/>
+                    <include name="regLess1K3Dayupgrade"/>
+                    <include name="regOver1K3Dayupgrade"/>
+                    <include name="regOver5KOnly3Dayupgrade"/>
+                    <include name="moveBetweenShippingOptions"/>
+                    <include name="revertShippingOptions"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

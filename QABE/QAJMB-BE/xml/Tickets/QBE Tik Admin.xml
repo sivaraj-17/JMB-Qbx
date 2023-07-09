@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Backend Admin Tickets" preserve-order="true">
+	<test name="BE Admin Tickets Test Cases">
+		<classes>
+			<!-- JMB-6017, JMB-6112, JMB-6209  -->
+			<class name="testcases.admin.Q_AdminSetting">
+				<methods>
+					<include name="verifyAutoClearbutton"/>
+					<include name="oversold_JMB6112"/>
+					<include name="permissionToMarkOrdersCompleted"/>
+				</methods>
+			</class>
+			<!-- JMB-6182, JMB-6183 -->
+			<class name="testcases.admin.Q_Repos">
+				<methods>
+					<include name="addRepo"/>
+					<include name="eta_JMB6182"/>
+					<include name="productStatusPage"/>
+				</methods>
+			</class>
+			<!-- JMB-6722, JMB-6330, JMB-6138, JMB-6580 -->
+			<class name="testcases.admin.Q_AllAdmin">
+				<methods>
+					<exclude name="ImproperCalculationDallasInventory_JMB6722"/>
+					<include name="noSuchFileOrDirectoryInGetImageSize"/>
+					<include name="receiptButtonsPermission47on"/>
+					<include name="receiptButtonsPermission47off"/>
+					<include name="findCustomerByEmail"/>
+					<include name="findCustomerByPhone"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+  	
+</suite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BEQ-JMB Order Form Automation Suite" preserve-order="true">
+	<suite-files>
+		<suite-file path="OrderInfo.xml" />
+		<suite-file path="OrderInvoice.xml" />
+		<suite-file path="OrderShiiping.xml" />
+		<suite-file path="OrderBtnGroup.xml" />
+	</suite-files>
+
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Tickets Registered Checkout" preserve-order="true">
+	<test name="PM Tickets Registered Checkout Test Cases">
+
+		<classes>
+			<!-- JMB-6079, JMB-5894, JMB-3594  -->
+			<class name="testcases.registered.Q_PM_RegisteredCheckout">
+				<methods>
+					<include name="noShippingOrderOver299WithCoupon"/>
+					<include name="verifyProductTitleOnThankYouPage_registered"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

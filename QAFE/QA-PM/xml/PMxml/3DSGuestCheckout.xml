@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM 3DS Guest Automation Suite" preserve-order="true">
+	<test name="PM 3DS Guest Checkout Test Cases">
+		<classes>
+			<class name="testcases.guest.Q_PM_Guest3Ds">
+				<methods>
+					<include name="turn3DSOn"/>
+					<include name="guestFrictionlessSuccess001"/>
+					<include name="guestFrictionlessNoAuth001"/>
+					<include name="guestFrictionlessUnavailableAuth001"/>
+					<include name="guestFrictionlessWithRejection001"/>
+					<include name="guestEnrollmentCheckError001"/>
+					<include name="guestSetupSucess001"/>
+					<include name="guestSetupAuthUnsuccessful001"/>
+					<include name="guestSetupAuthUnavailable001"/>
+					<include name="turn3DSOff"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- PM Guest Checkout Test Cases -->
+  	
+</suite>

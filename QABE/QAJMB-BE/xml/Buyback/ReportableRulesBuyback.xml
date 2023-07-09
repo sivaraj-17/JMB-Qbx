@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home Page" >
+
+    <test name="BuyBack Suite">
+        <classes>
+            <class name="testcases.buyback.Q_ReportableRules">
+                <methods>
+                    <include name="goldSilverCoinsNotReportable"/>
+                    <include name="silverGoldBarBelowThreshhold"/>
+                    <include name="platinumPallidiumBarsBelowThreshhold"/>
+                    <include name="goldCoinsLt25NotReportable"/>
+                    <include name="mexicanSilver90NotReportableItem"/>
+                    <include name="goldBar40ozSilverBar1000ozReportable"/>
+                    <include name="reportablePlatinumPallidiumBars"/>
+                    <include name="reportableGoldCoins25Plus"/>
+                    <include name="mexicanSilver90ReportableItem"/>
+                </methods>
+            </class>
+            </classes>
+    </test>
+</suite>

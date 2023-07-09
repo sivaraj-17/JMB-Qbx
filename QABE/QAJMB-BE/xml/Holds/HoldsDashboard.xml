@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Holds Dashboard Automation Suite" preserve-order="true">
+	<test name="JMB Hold Dashboard Test Cases">
+		<classes>
+			<class name="testcases.hold.Q_DashboardLink">
+				<methods>
+					<include name="paymentReview" />
+					<include name="decisionManager" />
+					<include name="priceCheck" />
+					<include name="unpaidInvoice" />
+					<include name="finalReview" />
+					<include name="reshipmentHold" />
+					<include name="salesTaxIssue" />
+					<include name="billingUnpaid" />
+					<include name="payPalReview" />
+					<include name="basicHold" />
+					<include name="shippingIssue" />
+					<include name="checkIssue" />
+					<include name="addressVerification" />
+					<include name="starter" />
+					<include name="security" />
+				</methods>
+			</class>
+			<!--<class name="testcases.hold.SystemSetClear">
+				<methods>
+					<include name="createUnpaidInvoiceHold"/>
+					<include name="clearUnpaidInvoiceHold"/>
+					<include name="cancelInvoiceToClearHold"/>
+					<include name="createPriceCheckAuto"/>
+					<include name="createSalesTaxIssueHold"/>
+					<include name="salesTaxIssueClear"/>
+				</methods>
+			</class>-->
+
+		</classes>
+	</test>
+
+</suite>

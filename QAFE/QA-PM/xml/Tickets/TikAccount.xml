@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Tickets Account Suite " preserve-order="true">
+	<test name="PM Tickets Account Test Cases">
+
+		<classes>
+			<!-- JMB-6056 -->
+			<class name="testcases.account.Q_PM_MyAccount">
+				<methods>
+					<include name="verifyBuyAgain"/>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+</suite>

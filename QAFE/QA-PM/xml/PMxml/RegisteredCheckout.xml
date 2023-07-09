@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Account Automation Suite" preserve-order="true">
+	<test name="PM Registered User Checkout Test Cases">
+		<classes>
+			<class name="testcases.registered.Q_PM_RegisteredCheckout">
+				<methods>
+					<include name="turn3DSOff"/>
+					<include name="persistentCart"/>
+					<include name="bridgeLogin"/>
+					<include name="regCreditCard"/>
+					<include name="pendingOrder"/>
+					<include name="paidOrder"/>
+					<include name="regSwitchCard"/>
+					<include name="regSwitchAddress"/>
+					<include name="editShippingAdd"/>
+					<include name="applyDiscount"/>
+					<include name="minShippingApplied"/>
+					<include name="shippingTaxes"/>
+					<include name="shipUpgradePriority"/>
+					<include name="shippingUpgrade3DayAir"/>
+					<include name="regPaperCheck"/>
+					<include name="regBankWire"/>
+					<include name="regAch"/>
+					<include name="switchPcToAch"/>
+					<!--<include name="switchWireToAch"/>-->
+					
+					<include name="verifyProductTitleOnThankYouPage_registered"/>
+					<include name="registerOrderBillingAddress"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- Registered User Checkout Test Cases -->
+  	
+</suite>

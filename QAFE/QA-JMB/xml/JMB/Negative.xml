@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Shipping Automation Suite" preserve-order="true">
+	<test name="JMB Shipping Upgrade Test Cases">
+		<classes>
+			<class name="testcases.negative.Q_JMB_NegativeCheckout">
+				<methods>
+					<include name="invalidCartQuantity"/>
+					<include name="guest3dCVVAmwx"/>
+					<include name="guest2dCVVAmwx"/>
+					<include name="guest2dCVVVia"/>
+					<include name="guest4dCVVVia"/>
+					<include name="lNameInvalidChar"/>
+					<include name="firstNameBlank"/>
+					<include name="expiredCard"/>
+					<exclude name="expiredCardErrorMsg"/>
+					<exclude name="expiringCardAlert"/>
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

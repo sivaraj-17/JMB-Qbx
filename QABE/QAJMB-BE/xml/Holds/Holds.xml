@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BEQ-JMB System Hold Automation Suite" preserve-order="true">
+	<suite-files>
+		<suite-file path="HoldsOrderVerification.xml" />
+		<suite-file path="HoldsDashboard.xml" />
+	</suite-files>
+
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Tickets Registered User Checkout Automation Suite" preserve-order="true">
+	<test name="JMB Tickets Registered User Checkout Test Cases">
+		<classes>
+			<!-- JMB-5446, JMB-6413 -->
+			<class name="testcases.registered.Q_JMB_RegisteredUser">
+				<methods>
+					<include name="salesTaxCalculationForAccesoriesWithCoupon"/>
+					<include name="registerOrderPickUpShippingOption"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Registered User Checkout Test Cases -->
+  	
+</suite>

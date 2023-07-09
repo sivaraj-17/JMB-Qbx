@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Registered User Checkout Automation Suite" preserve-order="true">
+	<test name="Silver Registered User Checkout Test Cases">
+		<classes>
+			<class name="testcases.registered.Q_JMB_RegisteredUser">
+				<methods>
+					<include name="ccNoTaxMinShipping"/>
+					<include name="ccTaxShippingUpgrade"/>
+					<include name="pendingOrder"/>
+					<include name="qcCC3SwitchShippingAddress"/>
+					<include name="bankwireCheckout"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Registered User Checkout Test Cases -->
+  	
+</suite>

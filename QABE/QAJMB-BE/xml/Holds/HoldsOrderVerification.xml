@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Holds Order Form Automation Suite" preserve-order="true">
+	<test name="JMB Hold Orders Test Cases">
+		<classes>
+			<class name="testcases.hold.Q_OrderVerification">
+				<methods>
+					<include name="paymentReview" />
+					<include name="decisionManager" />
+					<include name="priceCheck" />
+					<include name="unpaidInvoice" />
+					<include name="finalReview" />
+					<include name="reshipmentHold" />
+					<include name="salesTaxIssue" />
+					<include name="billingUnpaid" />
+					<include name="payPalReview" />
+					<include name="basicHold" />
+					<include name="shippingIssue" />
+					<include name="checkIssue" />
+					<include name="addressVerification" />
+					<include name="starter" />
+					<include name="security" />
+					
+					<include name="postShipment" />
+					<include name="oversold" />
+					<include name="achError" />
+					<include name="abilityToFlagCustomerOrder_registered" />
+					<include name="abilityToFlagCustomerBuyback_registered" />
+					<include name="abilityToFlagCustomerOrder_guest" />
+					<include name="verifyFlagMsg_guest" />
+					<include name="addCapabilityToDetectIfShipAddressMailBoxStore" />
+					<include name="addressChangeStandaloneHold" />
+					<include name="guestCustomerOpsHoldEnabled" />
+					<include name="verifyTimestampforGuestCustomerOpsHold_JMB7554" />
+					<include name="verifyHoldEnhancement" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

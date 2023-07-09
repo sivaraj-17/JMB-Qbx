@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Silver Checkout Rules Automation Suite" preserve-order="true">
+    <test name="Silver Checkout Rules Test Cases">
+        <classes>
+            <class name="testcases.cart.Q_Slv_CheckoutRules">
+                <methods>
+                    <include name="cartMaximumQuantityAllowed"/>
+                    <include name="cartLimitQuantityAllowed"/>
+                    <include name="bwMinRequired"/>
+                    <include name="bwbcMinRequired"/>
+                    <include name="allButCreditCard"/>
+                    <include name="allPaymentTypesAvialable"/>
+                    <include name="bankWireAndPaperCheck"/>
+                    <include name="bankWireAndPaperCheck"/>
+                    <include name="callCustomerService"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Product Form Automation Suite" preserve-order="true">
+	<test name="JMB Product Form Test Cases">
+		<classes>
+			<class name="testcases.products.Q_ProductsTestCases">
+				<methods>
+					<include name="productSearch" />
+					<include name="addProductNote" />
+					<include name="verifyPDPinStockAlert" />
+					<include name="verifyPDPinStock" />
+					<include name="uncheckLimit" />
+					<include name="setProductLimit" />
+					<include name="pdpProductAccessories" />
+					<include name="addProductAccessories" />
+					<include name="removeProductAccessories" />
+					<include name="addBbNote" />
+					<include name="adjustedPremium" />
+					<exclude name="verifyNotesCanBeAddedInPrdPages" />
+					<exclude name="manageOOSProductVisibilityInPLP_checkboxOnInBackend" />
+					<exclude name="manageOOSProductVisibilityInPLP_checkboxOffInBackend" />
+					<exclude name="productStatusListChanges_invCountCheck" />
+					<exclude name="productStatusListChanges_carrySort" />
+					<exclude name="verifyProdExchangeRegInventory" />
+					<exclude name="verifyProdExchangeDallasInventory" />
+					<exclude name="verifyProductsCanbeDeletedFromRepo" />
+					<exclude name="dallasInHandReport" />
+					<exclude name="searchDallasInHandReport" />
+					<exclude name="verifyGoldCarryTotal" />
+					<exclude name="verifyUnArriveRecieptFunctionality" />
+					<exclude name="verifyChild1AndChild2InventoryChangesAfterParentOrder"/>
+					<exclude name="verifyParentAndChild2InventoryChangesAfterChild1Order"/>
+					<exclude name="verifyParentAndChild1InventoryChangesAfterChild2Order" />
+					<exclude name="copperAsOnlyFixedPricing" />
+					<exclude name="adjustInhandImprovement" />
+					<exclude name="productInhandExchangeImprovement" />
+					<exclude name="eliminateShipWeightAndSyncWithAmark" />
+					<exclude name="updateFollowUpDateColumn_highPriority" />
+					<exclude name="updateFollowUpDateColumn_lowPriority" />
+					<exclude name="abilityToCreateAndDownloadQuicksightReportToCSV" />
+					<exclude name="fixHedgePage" />
+					<exclude name="validateBBCheckoutWhenUncheckedProductIsUsed" />
+					<exclude name="forceEachProductToHaveMinAndMaxInOrderInstock" />
+					<exclude name="verifyNewDueDateField_lowInventoryCSV_highPriority" />
+					<exclude name="verifyNewDueDateField_lowInventoryCSV_lowPriority" />
+					<include name="verifyAdminProductErrorLog" />
+					<include name="verifySupplierPrem_onAddProductPageAndEditProductPage" />
+					<include name="verifyUpdateBtn_withoutEntirePageRefresh_lowInventory_highPriority" />
+					<include name="verifyUpdateBtn_withoutEntirePageRefresh_lowInventory_lowPriority" />
+					<include name="verifyUpdateNoteBtn_withoutEntirePageRefresh_productStatus" />
+					<include name="verifyClearBtn_withoutEntirePageRefresh_productStatus" />
+					<include name="verifyProductPremiumBlender_DIYBuyback" />
+					<include name="verifyAllColumnHeaders_andSpotPriceValues" />
+					<include name="verifyNewProductDefaultToOutOfStock" />
+					<include name="verifyProductStatusPageAdditions" />
+					
+					<include name="addCheckBoxToAccessoriesForSLVRelatedProd" />
+					<include name="addCheckBoxToAccessoriesForJmRelatedAcces" />
+					<include name="verifyPriorityQuote_JMB7142" />
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+</suite>

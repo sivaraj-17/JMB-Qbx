@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Buyback Wire" >
+    <test name="BuyBack Suite">
+        <classes>
+         <class name="testcases.buyback.Q_BuybackWire">
+                <methods>
+                    <include name="listWiresPerPage"/>
+                    <include name="searchByName"/>
+                    <include name="changeListEntries"/>
+                    <include name="wirePagination"/>
+                    <include name="viewWireDetails"/>
+                    <include name="createExternalWire"/>
+                    <include name="createProvidentWire"/>
+                    <include name="initiateWire"/>
+                    <include name="completeWire"/>
+                    <include name="deleteWire"/>
+                    <include name="deleteBbFromWire"/>
+                </methods>
+            </class>
+
+            </classes>
+    </test>
+</suite>

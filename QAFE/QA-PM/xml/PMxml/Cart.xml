@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Cart Automation Suite" preserve-order="true">
+	<suite-files>
+		<suite-file path="CartFunction.xml" />
+		<suite-file path="CheckoutRules.xml" />
+		<suite-file path="QcCheckoutRules.xml" />
+		<suite-file path="OrderDetails.xml" />
+	</suite-files>
+  	
+</suite>

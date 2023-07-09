@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Shipping Automation Suite" preserve-order="true">
+	<test name="JMB Shipping Upgrade Test Cases">
+		<classes>
+			<class name="testcases.shipping.ShippingUpgrade">
+				<methods>
+					<include name="guestShippingMinDefault"/>
+					<include name="guestDefaultShipping"/>
+					<include name="guestShippingMinUPS3Day"/>
+					<include name="guestShippingUpgradePri"/>
+					<include name="guestShippingLess1K3day"/>
+					<include name="guestShipping3DayTc2"/>
+					<include name="regShippingLess500Pri"/>
+					<include name="registeredMinShippingCharge"/>
+					<include name="registeredMinShippingNoCharge"/>
+					<include name="regLess1K3Dayupgrade"/>
+					<include name="regOver1K3Dayupgrade"/>
+					<include name="regOver5KOnly3Dayupgrade"/>
+					<include name="moveBetweenShippingOptions"/>
+					<include name="revertShippingOptions"/>
+					<include name="verifyShippingOptionsLessThan$199SelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan16OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan101OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$1500AndLessThan16OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$30000AndLessThan101OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan450OzSelectUPS3DayAir"/>
+					<include name="verifyShippingOptionsLessThan$30000AndLessThan450OzSelectUPS3DayAir"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Tickets Starter Pack Automation Suite" preserve-order="true">
+    <test name="JJMB Tickets Starter Pack Test Cases">
+       <classes>
+           <!-- JMB-5804 -->
+           <class name="testcases.starterPak.Q_JMB_StarterPackInstoc_JMB5804_JM">
+               <methods>
+                   <include name="starterOutOfStockGuest"/>
+                   <include name="starterOutOfStockLoggedAddAlert"/>
+                   <include name="starterOutOfStockLoggedRemoveAlert"/>
+                   <include name="noInStockALertBtnForUsersWhoBoughtStarter"/>
+                   <include name="starterInStockPreiouslyOrderd"/>
+                   <include name="starterInOfStockGuest"/>
+               </methods>
+           </class>
+       </classes>
+
+    </test>
+
+</suite>

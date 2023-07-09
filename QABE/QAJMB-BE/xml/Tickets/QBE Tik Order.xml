@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BE Order Form Tickets Suite" preserve-order="true">
+	<test name="BE Order Form Tickets Test Cases">
+		<classes>
+			<!-- JMB-6523, JMB-6633, JMB-6778, JMB-7003, JMB-6482, JMB-7072 -->
+			<class name="testcases.order.Q_OrderInfo">
+				<methods>
+					<include name="verifyReturnVerifications" />
+					<include name="verifyDeletion_whenOrderIsIncomplete" />
+					<include name="verifyDeletion_whenInvoiceIsIncomplete" />
+					<include name="orderMarginCalculation" />
+					<include name="fraudedCustomerBillingReviewFlagRegisteredUser" />
+					<include name="fraudedCustomerBillingReviewFlagGuestUser" />
+					<include name="verifyChildSku_additionToPaidOrder" />
+					<include name="preventReturningOrder" />
+					<include name="verifyStateValueAndAPIValueMatch" />
+					<include name="verifySalesTaxBreakdown" />
+					<include name="returnEntireOrderAndOrderReceivedLinkWithPermission97" />
+					<include name="returnEntireOrderAndOrderReceivedLinkWithoutPermission97" />
+				</methods>
+			</class>
+			<!-- JMB-6720, JMB-6798, JMB-6369, JMB-6584, JMB-6991, JMB-6830, JMB-7089 -->
+			<class name="testcases.order.Q_OrderShipping">
+				<methods>
+					<include name="verifyPaidOrderAbleToChangeShippingOption" />
+					<include name="verifyOrderShippingOptionsDisplay" />
+					<include name="verifyShippingOptionsLessThan$199Admin" />
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan16OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan16OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$15000AndLessThan16OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$1000AndLessThan200OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan200OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$15000AndLessThan200OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$25000AndLessThan200OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan300OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$25000AndLessThan300OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan450OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$25000AndLessThan450OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$5000AndLessThan750OzAdmin" />
+					<include name="verifyShippingOptionsLessThan$15000AndLessThan750OzAdmin" />
+					<include name="verifyShippingOptionsOver750OzAdmin" />
+					<include name="verifyShippingOptionsOver$25000Admin" />
+					<include name="verifyOrderShippingOptionsUPSStaysOnAdmin" />
+					<include name="allowUsersToUndoStorage" />
+					<include name="verifyAutoFlagMassiveOrdersToShipCommercial" />
+				</methods>
+			</class>
+			<!-- JMB-6270, JMB-3925, JMB-5343 -->
+			<class name="testcases.order.Q_OrderInvoices">
+				<methods>
+					<include name="createEditAndPayInvoice"/>
+					<include name="amountComma"/>
+					<include name="claimsInvoiceLink" />
+					<include name="verifyInvoicePayment_markPaidInAdmin" />
+				</methods>
+			</class>
+			<!-- JMB-6189, JMB-6059 -->
+			<class name ="testcases.order.Q_OrderFormBtnGroup">
+				<methods>
+					<include name="skipLatePaymentEmailJMB_6189"/>
+					<include name="verifyReshipDate"/>
+				</methods>
+			</class>
+			<!-- JMB-7020, JMB-7249 -->
+			<class name ="testcases.order.Q_OrderCancellation">
+				<methods>
+					<include name="addNoteFeatureForCancellingInvoices"/>
+					<include name="cancelInvoiceReports"/>
+					<include name="editCancelInvoiceReports"/>
+					<include name="verifyUnableToCancelShippedOrderWithoutPermission86"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

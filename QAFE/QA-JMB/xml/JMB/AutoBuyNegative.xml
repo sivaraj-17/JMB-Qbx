@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion AutoBuy Negative Automation Suite" preserve-order="true">
+	<test name="JMB AutoBuy Negative Test Cases">
+		<classes>
+			<class name="testcases.autoBuy.Q_JMB_AutoBuyNegativeScenarios">
+				<methods>
+					<include name="autoBuyAchBankAccountRequired"/>
+					<include name="autoBuyCCCardRequired"/>
+					<include name="autoBuyVerifyCannotDeleteCreditCardWithActiveOrders"/>
+					<include name="autoBuyVerifyCannotDeleteBankAccountWithActiveOrders"/>
+					<include name="autoBuyVerifyCannotDeleteOrEditAddressWithActiveOrders"/>
+					<include name="autoBuyVerifyNonAutoBuyProduct"/>
+					<include name="autoBuyVerifyFreqStartDatePastDateError"/>
+					<include name="autoBuyVerifyFreqEndDatePastDateError"/>
+					<include name="autoBuyGuestVerification"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Guest Checkout Test Cases -->
+  	
+</suite>

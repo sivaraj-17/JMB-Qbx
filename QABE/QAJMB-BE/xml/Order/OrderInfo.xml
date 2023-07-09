@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Order Info Automation Suite" preserve-order="true">
+	<test name="JMB Order Info Test Cases">
+		<classes>
+			<class name="testcases.order.Q_OrderInfo">
+				<methods>
+					<include name="invoiceShippingAddress" />
+					<include name="preSaleESD" />
+					<include name="publishStatus" />
+					<include name="reinstatedOrderMargin" />
+					<include name="addOrderQuantity" />
+					<include name="addOrderLineItem" />
+					<include name="removeOrderLineItem" />
+					<include name="verifyReturnVerifications" />
+					<exclude name="verifyDeletion_whenOrderIsIncomplete" />
+					<exclude name="verifyDeletion_whenInvoiceIsIncomplete" />
+					<exclude name="orderMarginCalculation" />
+					<exclude name="limitOrderDisplayedAdmin" />
+					<include name="fraudedCustomerBillingReviewFlagRegisteredUser" />
+					<!--<include name="fraudedCustomerBillingReviewFlagGuestUser" /> -->
+					<include name="verifyChildSku_additionToPaidOrder" />
+					<include name="preventReturningOrder" />
+					<include name="verifyStateValueAndAPIValueMatch" />
+					<include name="verifySalesTaxBreakdown" />
+					<include name="paymentInformationCompletedOrders" />
+					<include name="verifyNewClaimStatus_JMB7253" />
+					
+					<include name="lockdownPendingCcOrders" />
+					<include name="verifyUpdateEsdOnLineItemUpdate" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

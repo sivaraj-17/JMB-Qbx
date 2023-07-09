@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM Automation Suite" preserve-order="true">
+	<suite-files>
+		<suite-file path="PMxml/Account.xml" />
+		<suite-file path="PMxml/CartFunction.xml" />
+		<suite-file path="PMxml/CheckoutRules.xml" />
+		<suite-file path="PMxml/QcCheckoutRules.xml" />
+		<suite-file path="PMxml/OrderDetails.xml" />
+		<suite-file path="PMxml/GuestCheckout.xml" />
+		<suite-file path="PMxml/RegisteredCheckout.xml" />
+		<suite-file path="PMxml/NegativeScenarios.xml" />
+	</suite-files>
+  	
+</suite>

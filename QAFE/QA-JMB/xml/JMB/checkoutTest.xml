@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Registered User Checkout Automation Suite" preserve-order="true">
+	<test name="JMB Registered User Checkout Test Cases">
+		<classes>
+			<class name="testcases.registered.Q_JMB_RegisteredUser">
+				<methods>
+					<exclude name="persistantCart"/>
+					<exclude name="bridgeRegisteredCheckout"/>
+					<include name="masterCardTaxNoShipping"/>
+					<include name="ccNoTaxMinShipping"/>
+					<include name="ccNoTaxNoShipping"/>
+					<include name="ccTaxShipping"/>
+					<include name="ccTaxShippingUpgrade"/>
+					<include name="ccGiftCertifcate"/>
+					<include name="pendingOrder"/>
+					<include name="paidOrder"/>
+					<include name="switchPayment"/>
+					<exclude name="switchShippingAddress"/>
+					<exclude name="editShippingAddress"/>
+					<exclude name="bankwireNoDefaults"/>
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Registered User Checkout Test Cases -->
+  	
+</suite>

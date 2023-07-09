@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Navigation Cart Automation Suite" preserve-order="true">
+    <test name="JMB Tickets Navigation Test Cases">
+        <classes>
+            <!-- JMB-6245, JMB-6394 -->
+            <class name="testcases.navigation.Q_JMB_HeaderNavigation">
+                <methods>
+                    <include name="goldLoans"/>
+                    <include name="loansPage"/>
+                </methods>
+            </class>
+            <!-- JMB-7168 -->
+            <class name="testcases.navigation.Q_JMB_FooterNavigation">
+                <methods>
+                    <include name="verifyFAQRecentArticleAndCategoryLinks"/>
+                </methods>
+        	</class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PM New Features Tickets Suite" preserve-order="true">
+	<test name="PM New Features Tickets Test Cases">
+		<classes>
+			<!-- JMB-6967 -->
+			<class name ="testcases.newFeatures.Q_PM_SearchBarFunctionlaiy_6967">
+				<methods>
+					<include name="searchBarFunctionality"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>

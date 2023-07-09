@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Frontend New Features" preserve-order="true">
+	<test name="JMB FE New Features Test Cases">
+		<classes>
+			<!-- JMB-5704 -->
+			<class name="testcases.newFeatures.Q_JMB_PwdValidation5704_JM">
+				<methods>
+					<include name="newUserInvalidPasswordValidation"/>
+					<include name="newUserInvalidPasswordValidationViaRegisterPage"/>
+					<include name="registerGuestUserInvalidPasswordValidation"/>
+					<include name="changePasswdWithInvalidInputs"/>
+					<include name="newUserValidPasswordValidationViaRegisterPage"/>
+					<include name="changePasswdWithvalidInputs"/>
+				</methods>
+			</class>
+			<!-- JMB-5995 -->
+			<class name="testcases.newFeatures.Q_JMB_WishListJMB5995_JM">
+				<methods>
+					<include name="myAccountWishList"/>
+					<include name="myAccountWishListATC"/>
+					<include name="myAccountWishListInstockAlert"/>
+					<include name="myAccountWishListPDPInstockAlert"/>
+					<include name="wishlistPagination"/>
+					<include name="addAndRemoveWishListPDP"/>
+					<include name="addWishListPDPGuest"/>
+				</methods>
+			</class>
+			<class name="testcases.NewFeatures.Q_JMB_WPPluginUpdateMiniOrange_JMB6657">
+				<methods>
+					<include name="ssoLoginPM"/>
+					<include name="miniOrangeWpPluginVersionVerifcation"/>
+				</methods>
+			</class>
+			<class name="testcases.NewFeatures.Q_JMB_HidePricingInfoOnOOSproductsInTheSearchResult_JMB6652_JM">
+				<methods>
+					<include name="hidePricingInfo_OOSproducts"/>
+				</methods>
+			</class>
+			<class name="testcases.NewFeatures.Q_JMB_DisableEmbeds_JMB6786">
+				<methods>
+					<include name="disableEmbeds"/>
+				</methods>
+			</class>
+			<!-- JMB- -->
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

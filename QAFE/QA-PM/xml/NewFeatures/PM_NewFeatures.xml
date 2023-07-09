@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Provident Frontend New Features" preserve-order="true">
+	<test name="PM FE New Features Test Cases">
+		<classes>
+			<!-- JMB-5704 -->
+			<class name="testcases.newFeatures.Q_PM_PasswordValidation_JMB5704_PM">
+				<methods>
+					<include name="registerNewUserInvalidPasswordValidation"/>
+					<include name="registerNewUserInvalidPasswordValidationViaRegisterPage"/>
+					<include name="regUserCheckoutInvalidPasswordValidation"/>
+					<include name="changePasswdWithInvalidInputs"/>
+					<include name="registerNewUservalidPasswordValidation"/>
+					<include name="registerNewUservalidPasswordValidationViaRegisterPage"/>
+					<include name="regUserCheckoutvalidPasswordValidation"/>
+					<include name="changePasswdWithvalidInputs"/>
+				</methods>
+			</class>
+			<!-- JMB-6125 -->
+			<class name="testcases.newFeatures.Q_PM_Whishlist_JMB6125_PM">
+				<methods>
+					<include name="myAccountWishList"/>
+					<include name="myAccountWishListATC"/>
+					<include name="myAccountWishListInstockAlert"/>
+					<include name="myAccountWishListPDPInstockAlert"/>
+					<include name="wishlistPagination"/>
+					<include name="addAndRemoveWishListPDP"/>
+					<include name="addWishListPDPGuest"/>
+				</methods>
+			</class>
+			
+			<class name="testcases.newFeatures.Q_PM_WPPluginUpdateMiniOrange_JMB6657">
+				<methods>
+					<include name="ssoLoginPM"/>
+					<include name="miniOrangeWpPluginVersionVerifcation"/>
+				</methods>
+			</class>
+			<class name="testcases.newFeatures.Q_PM_DisableEmbeds_JMB6786">
+				<methods>
+					<include name="disableEmbeds"/>
+				</methods>
+			</class>
+			<!-- JMB-6967 -->
+			<class name ="testcases.newFeatures.Q_PM_SearchBarFunctionlaiy_6967">
+				<methods>
+					<include name="searchBarFunctionality"/>
+				</methods>
+			</class>
+			<!-- JMB- -->
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

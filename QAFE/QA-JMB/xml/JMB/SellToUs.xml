@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JM Bullion Sell to Us Automation Suite" preserve-order="true">
+	<test name="JMB Buyback Test Cases">
+		<classes>
+			<class name="testcases.stu.Q_JMB_SellToUs">
+				<methods>
+					<include name="grantUserDIYPermission"/>
+					<include name="revokeUserDIYPermission"/>
+					<exclude name="listBBMyAccount"/>
+					<include name="minRequired"/>
+					<include name="diyMaxLimit"/>
+					<include name="creditCardRequired"/>
+					<include name="diyTurnedOff"/>
+					<include name="diyTurnedOn"/>
+					<include name="verifyCartCount"/>
+					<include name="emptyBbCart"/>
+					<include name="stuBBwireRequireBankInfo"/>
+					<exclude name="stuAchPay"/>
+					<include name="stuWirePayment"/>
+					<include name="stuCheckPayment"/>
+					<include name="stuPopularProducts"/>
+					<include name="stuMultipleMetalProducts"/>
+					<include name="stuReportableItem"/>
+					<include name="mailOptionMyOwn"/>
+					<include name="trackingNumber"/>
+					<include name="UpdateTrackingNumber"/>
+					<include name="legacyEcheckAvialeQC"/>
+					<include name="lgacyEcheckNotAvaiNonQC"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- JMB Shipping Upgrade Test Cases -->
+  	
+</suite>

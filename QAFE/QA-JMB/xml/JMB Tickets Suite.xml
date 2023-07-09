@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JMB Tickets Suite" preserve-order="true">
+  	<suite-files>
+  		<suite-file path="Tickets/TikAccount.xml" />
+  		<suite-file path="Tickets/TikCart.xml" />
+  		<suite-file path="Tickets/TikNavigation.xml" />
+  		<suite-file path="Tickets/TikNegative.xml" />
+  		<suite-file path="Tickets/TikPayPal.xml" />
+  		<suite-file path="Tickets/TikRegisteredUser.xml" />
+  		<suite-file path="Tickets/TikStarterPack.xml" />
+  		<suite-file path="Tickets/TikSTU.xml" />
+  	</suite-files>
+</suite>

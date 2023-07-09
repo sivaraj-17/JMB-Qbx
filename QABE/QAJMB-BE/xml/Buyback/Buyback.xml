@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BEQ-JMB Buyback Automation Suite" preserve-order="true">
+	<suite-files>
+		<suite-file path="CreateBuyback.xml" />
+		<suite-file path="EditBuyback.xml" />
+		<suite-file path="ReportableRulesBuyback.xml" />
+		<suite-file path="RequireAttentionBuyback.xml" />
+		<suite-file path="SearchBuyback.xml" />
+		<suite-file path="WireBuyback.xml" />
+	</suite-files>
+</suite>
